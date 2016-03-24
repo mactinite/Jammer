@@ -1,17 +1,24 @@
 <!doctype html>
 <html ng-app="eventCalendar">
+
 <head>
-  <script src="node_modules/angular/angular.js"></script>
-  <script src="js/controllers.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="js/controllers.js"></script>
 </head>
+
 <body ng-controller="EventController">
-    
-  <ul>
-    <li ng-repeat="event in events">
-      <span>{{event.name}}</span>
-      <p>{{event.description}}</p>
-    </li>
-  </ul>
+
+    <ul>
+        <li ng-repeat="event in events">
+            <span>{{event.name}}</span>
+            <p>{{event.description}}</p>
+        </li>
+    </ul>
+
+    <form action="fff" method="GET">
+        <input type="submit">
+    </form>
 
 </body>
+
 </html>
