@@ -1,11 +1,17 @@
-<!DOCTYPE HTML>
-<html>
-    <p>Hello!</p>
-    <form action="BackEnd" method="POST">
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" />
-        </div>
-        <input type="submit">
-    </form>
+<!doctype html>
+<html ng-app="eventCalendar">
+<head>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="EventController">
+    
+  <ul>
+    <li ng-repeat="event in events">
+      <span>{{event.name}}</span>
+      <p>{{event.description}}</p>
+    </li>
+  </ul>
+
+</body>
 </html>
