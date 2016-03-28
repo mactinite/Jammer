@@ -6,7 +6,7 @@ var favicon = require('serve-favicon');
 app.use(favicon(__dirname + '/images/favicon.ico'));
 app.use(express.static(__dirname));
  
-var port = 8080;
+var port = 3000;
 app.listen(port, function() {
     console.log('server listening on port ' + port);
 });

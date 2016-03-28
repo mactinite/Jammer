@@ -8,3 +8,8 @@ eventCalendar.controller('EventController', function ($scope,$http) {
         
     });
 });
+
+eventCalendar.controller("SidebarController", function($scope){
+    
+    
+});
