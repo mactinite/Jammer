@@ -35,17 +35,17 @@
 }
 
 .sidebar.on {
--webkit-box-shadow: 10px 0px 50px -10px rgba(0,0,0,0.33);
--moz-box-shadow: 10px 0px 50px -10px rgba(0,0,0,0.33);
-box-shadow: 10px 0px 50px -10px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 10px 0px 50px -10px rgba(0,0,0,0.33);
+    -moz-box-shadow: 10px 0px 50px -10px rgba(0,0,0,0.33);
+    box-shadow: 10px 0px 50px -10px rgba(0,0,0,0.33);
 
     transform: translateX(0px);
     overflow: visible;
 }
 .sidebar.off {
     -webkit-box-shadow: 10px 0px 25px -29px rgba(0,0,0,0.33);
--moz-box-shadow: 10px 0px 25px -29px rgba(0,0,0,0.33);
-box-shadow: 10px 0px 25px -29px rgba(0,0,0,0.33);
+    -moz-box-shadow: 10px 0px 25px -29px rgba(0,0,0,0.33);
+    box-shadow: 10px 0px 25px -29px rgba(0,0,0,0.33);
 
     transform: translateX(-250px);
     overflow: visible;

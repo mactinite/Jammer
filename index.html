@@ -8,15 +8,15 @@
     <script src="js/controllers.js"></script>
     <link rel="stylesheet" href="css/eventcal.css">
     <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href = "css/font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome/font-awesome.css">
 </head>
 
 <body ng-controller="EventController" ng-cloak>
-<div class="wrapper">
+    <div class="wrapper">
         <!-- Upcoming Events Section -->
         <div ng-init="sidebarClass='off'" id="sidebar-wrapper" class="sidebar on" ng-class="sidebarClass">
-        <a href="" class="sidebar-toggle" ng-click="sidebarClass='off'" ng-hide="sidebarClass=='off'"><i class="fa fa-chevron-left"></i> </a>
-        <a href="" class="sidebar-toggle" ng-click="sidebarClass='on'" ng-hide="sidebarClass=='on'"><i class="fa fa-chevron-right"></i></a>
+            <a href="" class="sidebar-toggle" ng-click="sidebarClass='off'" ng-hide="sidebarClass=='off'"><i class="fa fa-chevron-left"></i> </a>
+            <a href="" class="sidebar-toggle" ng-click="sidebarClass='on'" ng-hide="sidebarClass=='on'"><i class="fa fa-chevron-right"></i></a>
             <!-- Brand/Logo -->
             <section id="sidebar-brand">
                 <img id="brand-image" alt="profile pic" src="images/Event Calendar Logo.png">
@@ -36,28 +36,30 @@
                 </ul>
             </section>
         </div>
-</div>
+    </div>
 
-   <div id="main-wrapper" ng-class="sidebarClass" class="col-xs-10 col-sm-10">
-        <div id="calendar">
-            <script type="text/javascript">
-            var cal = new Calendar();
-            cal.generateHTML();
-            document.write(cal.getHTML());
-            </script>
-        </div>
-        
-        
-        <div class="container">
-            <ul>
-                <div class="alert alert-info" ng-repeat="event in data.events">
-                    <span>{{event.name}}</span>
-                    <p>{{event.description}}</p>
-                    <br/>
-                    <ul class="list-group">
-                        <li class="list-group-item" ng-repeat="attending in event.attending">{{attending.name}} is {{attending.status}}</li>
-                </div>
-                </ul>
+    <div id="main-wrapper" ng-class="sidebarClass" class="col-xs-10 col-sm-10">
+        <div class="content">
+            <div id="calendar">
+                <script type="text/javascript">
+                    var cal = new Calendar();
+                    cal.generateHTML();
+                    document.write(cal.getHTML())
+                </script>
+            </div>
+
+
+            <div class="container">
+                <ul>
+                    <div class="alert alert-info" ng-repeat="event in data.events">
+                        <span>{{event.name}}</span>
+                        <p>{{event.description}}</p>
+                        <br/>
+                        <ul class="list-group">
+                            <li class="list-group-item" ng-repeat="attending in event.attending">{{attending.name}} is {{attending.status}}</li>
+                    </div>
+                    </ul>
+            </div>
         </div>
     </div>
 
