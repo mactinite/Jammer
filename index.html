@@ -6,19 +6,17 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
     <script src="node_modules/angular/angular.js"></script>
     <script src="js/controllers.js"></script>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/eventcal.css">
     <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href = "css/font-awesome/font-awesome.css">
 </head>
 
-<body ng-controller="EventController">
-
-    <!-- sidebar -->
-    <nav class="col-xs-2 col-sm-2" id="wrapper">
-
-
+<body ng-controller="EventController" ng-cloak>
+<div class="wrapper">
         <!-- Upcoming Events Section -->
-        <div id="sidebar-wrapper">
+        <div ng-init="sidebarClass='off'" id="sidebar-wrapper" class="sidebar on" ng-class="sidebarClass">
+        <a href="" class="sidebar-toggle" ng-click="sidebarClass='off'" ng-hide="sidebarClass=='off'"><i class="fa fa-chevron-left"></i> </a>
+        <a href="" class="sidebar-toggle" ng-click="sidebarClass='on'" ng-hide="sidebarClass=='on'"><i class="fa fa-chevron-right"></i></a>
             <!-- Brand/Logo -->
             <section id="sidebar-brand">
                 <img id="brand-image" alt="profile pic" src="images/Event Calendar Logo.png">
@@ -38,12 +36,70 @@
                 </ul>
             </section>
         </div>
-            <button id="sidebar-toggle" ng-class="test"></button>
-    </nav>
-    
+</div>
 
-    <div id="main-wrapper" class="col-xs-10 col-sm-10">
-        <div id="calendar"></div>
+   <div id="main-wrapper" ng-class="sidebarClass" class="col-xs-10 col-sm-10">
+        <div id="calendar">
+            <div class="calendar-wrapper">
+                <h1 class="center">April</h1>
+                <ul id="calendar-daysOfWeek">
+                    <li>Sunday</li>
+                    <li>Monday</li>  
+                    <li>Tuesday</li>  
+                    <li>Wednesday</li>  
+                    <li>Thursday</li>  
+                    <li>Friday</li>  
+                    <li>Saturday</li>  
+                </ul>
+                <ul id="calendar-week">
+                    <li>28</li>
+                    <li>29</li>  
+                    <li>1</li>  
+                    <li>2</li>  
+                    <li>3</li>  
+                    <li>4</li>  
+                    <li>5</li>  
+                </ul>
+                <ul id="calendar-week">
+                    <li>6</li>
+                    <li>7</li>  
+                    <li>8</li>  
+                    <li>9</li>  
+                    <li>10</li>  
+                    <li>11</li>  
+                    <li>12</li>  
+                </ul>
+                <ul id="calendar-week">
+                    <li>13</li>
+                    <li>14</li>  
+                    <li>15</li>  
+                    <li>16</li>  
+                    <li>17</li>  
+                    <li>18</li>  
+                    <li>19</li>  
+                </ul>
+                <ul id="calendar-week">
+                    <li>20</li>
+                    <li>21</li>  
+                    <li>22</li>  
+                    <li>23</li>  
+                    <li>24</li>  
+                    <li>25</li>  
+                    <li>26</li>  
+                </ul>
+                <ul id="calendar-week">
+                    <li>27</li>
+                    <li>28</li>  
+                    <li>29</li>  
+                    <li>30</li>  
+                    <li>31</li>  
+                    <li>1</li>  
+                    <li>2</li>  
+                </ul>
+            </div>
+        </div>
+        
+        
         <div class="container">
             <ul>
                 <div class="alert alert-info" ng-repeat="event in data.events">
@@ -56,6 +112,8 @@
                 </ul>
         </div>
     </div>
+
+
 
 
     <!-- /container -->

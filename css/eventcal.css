@@ -1,15 +1,76 @@
-#calendar {
-  background: black;
-  width: 1450px;
-  height: 800px; }
+body {
+  font-family: 'Abel', sans-serif;
+  padding: 0px;
+  margin: 0px; }
 
 .center {
   text-align: center; }
 
 #main-wrapper {
-  padding-top: 1%;
-  padding-right: 5%; }
+  width: 100%;
+  margin: auto;
+  overflow-y: scroll;
+  position: fixed;
+  margin-left: 2.5%;
+  transition: all 0.4s ease 0s;
+  z-index: -10;
+  padding-top: 30px; }
 
-#wrapper {
-  padding-left: 250px;
-  transition: all 0.4s ease 0s; }
+#main-wrapper.on {
+  transform: translateX(250px); }
+
+#main-wrapper.off {
+  transform: translateX(0px); }
+
+#calendar-daysOfWeek {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between; }
+
+#calendar-daysOfWeek li {
+  margin: 0;
+  width: 14%;
+  padding: 3px;
+  height: 50px;
+  border: solid 1px white;
+  background-color: #008080; }
+
+#calendar-week {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between; }
+
+#calendar-week li {
+  margin: 0;
+  padding: 3px;
+  border: solid 1px white;
+  background-color: #00abdd;
+  width: 14%;
+  height: 100px; }
+
+.calendar-wrapper ul:first-of-type li:first-child {
+  border-radius: 5px 0px 0px 0px; }
+
+.calendar-wrapper ul:first-of-type li:last-child {
+  border-radius: 0px 5px 0px 0px; }
+
+.calendar-wrapper ul:last-of-type li:first-child {
+  border-radius: 0px 0px 0px 5px; }
+
+.calendar-wrapper ul:last-of-type li:last-child {
+  border-radius: 0px 0px 5px 0px; }
+
+#calendar {
+  width: 90%;
+  padding: 5px;
+  background-color: lightgray;
+  -webkit-box-shadow: inset 0px 0px 33px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 33px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 33px -13px rgba(0, 0, 0, 0.75);
+  border-radius: 2.5px; }

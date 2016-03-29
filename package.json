@@ -22,7 +22,6 @@
   "homepage": "https://github.com/justross/event-calendar#readme",
   "dependencies": {
     "angular": "^1.5.2",
-    "bootstrap": "^3.3.6",
     "express": "^4.13.4",
     "rethinkdb": "^2.2.2"
   },
