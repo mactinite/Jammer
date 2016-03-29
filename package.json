@@ -1,0 +1,40 @@
+{
+  "scripts": {
+    "start": "gulp watch"
+  },
+  "name": "event-calendar",
+  "description": "This is a project. Possibly done by more than one person!",
+  "version": "0.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justross/event-calendar.git"
+  },
+  "keywords": [
+    "Event",
+    "Calendar"
+  ],
+  "author": "Justin Ross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justross/event-calendar/issues"
+  },
+  "homepage": "https://github.com/justross/event-calendar#readme",
+  "dependencies": {
+    "angular": "^1.5.2",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "rethinkdb": "^2.2.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.8"
+  }
+}

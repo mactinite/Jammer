@@ -1,0 +1,67 @@
+<!doctype html>
+<html ng-app="eventCalendar">
+
+<head>
+    <title>FlipEvent: Event Calendar</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="js/controllers.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/eventcal.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+</head>
+
+<body ng-controller="EventController">
+
+    <!-- sidebar -->
+    <nav class="col-xs-2 col-sm-2" id="wrapper">
+
+
+        <!-- Upcoming Events Section -->
+        <div id="sidebar-wrapper">
+            <!-- Brand/Logo -->
+            <section id="sidebar-brand">
+                <img id="brand-image" alt="profile pic" src="images/Event Calendar Logo.png">
+            </section>
+
+            <!-- Profile Section -->
+            <section id="profile-section">
+                <img id="profile-image" alt="profile pic" src="images/cat.jpg">
+            </section>
+            <hr>
+            <section>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">Upcoming Events</li>
+                    <li><a href="#">Another link</a></li>
+                    <li><a href="#">Next link</a></li>
+                    <li><a href="#">Last link</a></li>
+                </ul>
+            </section>
+        </div>
+            <button id="sidebar-toggle" ng-class="test"></button>
+    </nav>
+    
+
+    <div id="main-wrapper" class="col-xs-10 col-sm-10">
+        <div id="calendar"></div>
+        <div class="container">
+            <ul>
+                <div class="alert alert-info" ng-repeat="event in data.events">
+                    <span>{{event.name}}</span>
+                    <p>{{event.description}}</p>
+                    <br/>
+                    <ul class="list-group">
+                        <li class="list-group-item" ng-repeat="attending in event.attending">{{attending.name}} is {{attending.status}}</li>
+                </div>
+                </ul>
+        </div>
+    </div>
+
+
+    <!-- /container -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

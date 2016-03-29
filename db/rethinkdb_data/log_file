@@ -1,0 +1,154 @@
+2385-03-28T10:59:03.210020700 0.026246s notice: In recursion: removing file 'C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data\\tmp'
+2385-03-28T10:59:03.211018600 0.027204s warn: Trying to delete non-existent file 'C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data\\tmp'
+2385-03-28T10:59:03.213014400 0.029238s notice: Initializing directory C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data
+2385-03-28T10:59:03.216008100 0.032987s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory 'C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data' did not already exist or is empty.)
+2385-03-28T10:59:03.217006000 0.033674s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-03-28T10:59:03.218003900 0.034366s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2385-03-28T10:59:03.218003901 0.034836s notice: Loading data from directory C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data
+2385-03-28T10:59:03.266901000 0.083942s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-03-28T10:59:03.274884200 0.091798s info: Automatically using cache size of 5380 MB
+2385-03-28T10:59:03.279873700 0.096471s notice: Listening for intracluster connections on port 29015
+2385-03-28T10:59:03.291848500 0.108658s notice: Listening for client driver connections on port 28015
+2385-03-28T10:59:03.293844300 0.110161s notice: Listening for administrative HTTP connections on port 8080
+2385-03-28T10:59:03.293844301 0.110188s notice: Listening on address: 127.0.0.1
+2385-03-28T10:59:03.293844302 0.110204s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2385-03-28T10:59:03.293844303 0.110228s notice: Server ready, "WACDTL23SG292E_tml" d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-03-28T10:59:33.278743500 30.159853s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
+2385-03-28T10:59:33.278743501 30.160025s debug: Error in HTTP GET of `https://update.rethinkdb.com/update_for/2.2.4-windows-alpha-4`: timed out after 30.000 seconds.
+2385-03-28T11:07:32.196570900 0.028967s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-03-28T11:07:32.196570901 0.029684s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2385-03-28T11:07:32.197576600 0.030045s notice: Loading data from directory C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data
+2385-03-28T11:07:32.217690600 0.050403s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-03-28T11:07:32.223724800 0.056428s info: Automatically using cache size of 5331 MB
+2385-03-28T11:07:32.227747600 0.060296s notice: Listening for intracluster connections on port 29015
+2385-03-28T11:07:32.236798900 0.069682s notice: Listening for client driver connections on port 28015
+2385-03-28T11:07:32.238810300 0.071191s notice: Listening for administrative HTTP connections on port 8080
+2385-03-28T11:07:32.238810301 0.071219s notice: Listening on address: 127.0.0.1
+2385-03-28T11:07:32.238810302 0.071236s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2385-03-28T11:07:32.238810303 0.071257s notice: Server ready, "WACDTL23SG292E_tml" d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-03-28T11:07:46.120487400 13.874989s notice: Server got Control-C; shutting down...
+2385-03-28T11:07:46.122498800 13.877084s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
+2385-03-28T11:07:46.122498801 13.877208s debug: Error in HTTP GET of `https://update.rethinkdb.com/update_for/2.2.4-windows-alpha-4`: interrupted.
+2385-03-28T11:07:46.125515900 13.879679s notice: Shutting down client connections...
+2385-03-28T11:07:46.128533000 13.883033s notice: All client connections closed.
+2385-03-28T11:07:46.128533001 13.883131s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2385-03-28T11:07:46.139595700 13.894210s notice: Storage engine shut down.
+2385-03-28T11:18:53.224801500 0.024820s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-03-28T11:18:53.224801501 0.025420s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2385-03-28T11:18:53.225796700 0.025759s notice: Loading data from directory C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data
+2385-03-28T11:18:53.244705500 0.045290s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-03-28T11:18:53.250676700 0.051156s info: Automatically using cache size of 5167 MB
+2385-03-28T11:18:53.254657500 0.054923s notice: Listening for intracluster connections on port 29015
+2385-03-28T11:18:53.263614300 0.064155s notice: Listening for client driver connections on port 28015
+2385-03-28T11:18:53.265604700 0.065710s notice: Listening for administrative HTTP connections on port 8080
+2385-03-28T11:18:53.265604701 0.065738s notice: Listening on address: 127.0.0.1
+2385-03-28T11:18:53.265604702 0.065754s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2385-03-28T11:18:53.265604703 0.065772s notice: Server ready, "WACDTL23SG292E_tml" d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-03-28T11:19:23.232321300 30.110421s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
+2385-03-28T11:19:23.233319500 30.110595s debug: Error in HTTP GET of `https://update.rethinkdb.com/update_for/2.2.4-windows-alpha-4`: timed out after 30.000 seconds.
+2385-03-28T11:21:34.968395000 162.041191s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:21:38.663503200 165.735649s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:21:42.960792000 170.031657s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:21:49.660801400 176.729945s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:21:56.965992300 184.032936s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:22:07.156523500 194.225336s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:22:19.658771700 206.732094s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:22:26.657671400 213.732719s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:22:33.953482000 221.031159s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:22:40.650472300 227.730353s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:22:47.956279900 235.038341s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:22:54.653270200 241.737666s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:23:01.952079900 249.038597s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:23:08.646071100 255.735487s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:23:15.944880800 263.036328s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:23:22.641871100 269.735358s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:23:29.940680800 277.037338s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:23:36.636671400 283.735627s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:23:43.937480500 291.038874s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:23:50.632471400 297.735595s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:23:57.934280200 305.039915s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:24:04.629271100 311.737442s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:24:11.924082000 319.034770s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:24:18.620072600 325.732949s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:24:25.923880800 333.038996s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:24:32.618871700 339.736420s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:24:39.918681100 347.038615s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:24:46.613672000 353.735345s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:24:53.914481100 361.039133s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:25:00.611471400 367.737907s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:25:07.910281100 375.038692s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:25:14.604272300 381.735508s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:25:21.906081100 389.039120s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:25:28.600072300 395.735412s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:25:35.900881400 403.039507s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:25:42.594872600 409.735446s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:25:49.892682600 417.035519s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:25:56.588673200 423.734142s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:25:58.825002100 425.970543s notice: Server got Control-C; shutting down...
+2385-03-28T11:25:58.827001500 425.972466s notice: Shutting down client connections...
+2385-03-28T11:25:58.828001200 425.974064s notice: All client connections closed.
+2385-03-28T11:25:58.828001201 425.974150s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2385-03-28T11:25:58.838997900 425.984394s notice: Storage engine shut down.
+2385-03-28T11:26:06.753622800 0.024647s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-03-28T11:26:06.754622500 0.025311s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2385-03-28T11:26:06.754622501 0.025685s notice: Loading data from directory C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data
+2385-03-28T11:26:06.775616200 0.046487s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-03-28T11:26:06.781614400 0.052165s info: Automatically using cache size of 5179 MB
+2385-03-28T11:26:06.786612900 0.057141s notice: Listening for intracluster connections on port 29015
+2385-03-28T11:26:06.795610200 0.066152s notice: Listening for client driver connections on port 28015
+2385-03-28T11:26:06.797609600 0.068252s notice: Listening for administrative HTTP connections on port 8080
+2385-03-28T11:26:06.797609601 0.068282s notice: Listening on address: 127.0.0.1
+2385-03-28T11:26:06.797609602 0.068299s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2385-03-28T11:26:06.797609603 0.068319s notice: Server ready, "WACDTL23SG292E_tml" d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-03-28T11:26:12.888781700 6.161169s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:26:19.579773800 12.854737s notice: Someone asked for the nonwhitelisted file "/browser-sync/socket.io/".  If this should be accessible, add it to the static web assets.
+2385-03-28T11:26:36.832596400 30.112734s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
+2385-03-28T11:26:36.832596401 30.112907s debug: Error in HTTP GET of `https://update.rethinkdb.com/update_for/2.2.4-windows-alpha-4`: timed out after 30.000 seconds.
+2385-03-28T11:39:30.877337900 804.225242s info: Table 972fd532-3032-4184-a714-1a8d96902682: Starting a new Raft election for term 1.
+2385-03-28T11:39:30.879337500 804.227487s info: Table 972fd532-3032-4184-a714-1a8d96902682: Added replica on this server.
+2385-03-28T11:39:30.891335100 804.238842s info: Table 972fd532-3032-4184-a714-1a8d96902682: This server is Raft leader for term 1. Latest log index is 0.
+2385-03-28T11:41:35.431422100 928.808742s notice: Removing file C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data\\972fd532-3032-4184-a714-1a8d96902682
+2385-03-28T11:41:35.431422101 928.808815s info: Table 972fd532-3032-4184-a714-1a8d96902682: Deleted the table.
+2385-03-28T11:41:43.028902300 936.408318s info: Table f91ca58f-d9bd-42c8-a2a8-6357c1c09cf0: Starting a new Raft election for term 1.
+2385-03-28T11:41:43.030901900 936.409926s info: Table f91ca58f-d9bd-42c8-a2a8-6357c1c09cf0: Added replica on this server.
+2385-03-28T11:41:43.038900300 936.418860s info: Table f91ca58f-d9bd-42c8-a2a8-6357c1c09cf0: This server is Raft leader for term 1. Latest log index is 0.
+2385-03-28T11:55:18.007800300 1751.502084s info: Table 1bb4ef8b-1a1d-4ed7-afbf-9257e2eb4a69: Starting a new Raft election for term 1.
+2385-03-28T11:55:18.009800300 1751.503866s info: Table 1bb4ef8b-1a1d-4ed7-afbf-9257e2eb4a69: Added replica on this server.
+2385-03-28T11:55:18.017800300 1751.511736s info: Table 1bb4ef8b-1a1d-4ed7-afbf-9257e2eb4a69: This server is Raft leader for term 1. Latest log index is 0.
+2385-03-28T11:57:41.853563900 1895.314370s notice: Removing file C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data\\1bb4ef8b-1a1d-4ed7-afbf-9257e2eb4a69
+2385-03-28T11:57:41.853563901 1895.314415s info: Table 1bb4ef8b-1a1d-4ed7-afbf-9257e2eb4a69: Deleted the table.
+2385-03-28T11:57:41.906585100 1895.367623s notice: Removing file C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data\\f91ca58f-d9bd-42c8-a2a8-6357c1c09cf0
+2385-03-28T11:57:41.906585101 1895.367670s info: Table f91ca58f-d9bd-42c8-a2a8-6357c1c09cf0: Deleted the table.
+2385-03-28T12:10:28.888925800 2662.235551s info: Table e8807552-8b2b-4f0a-b7a8-b2a3f1e6211f: Starting a new Raft election for term 1.
+2385-03-28T12:10:28.891926100 2662.239043s info: Table e8807552-8b2b-4f0a-b7a8-b2a3f1e6211f: Added replica on this server.
+2385-03-28T12:10:28.903927300 2662.250599s info: Table e8807552-8b2b-4f0a-b7a8-b2a3f1e6211f: This server is Raft leader for term 1. Latest log index is 0.
+2385-03-28T12:10:42.737310500 2676.082945s notice: Removing file C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data\\e8807552-8b2b-4f0a-b7a8-b2a3f1e6211f
+2385-03-28T12:10:42.737310501 2676.082988s info: Table e8807552-8b2b-4f0a-b7a8-b2a3f1e6211f: Deleted the table.
+2385-03-28T12:11:23.806790100 2717.151751s info: Table 9702b5c9-939f-49eb-bc77-1b053d9a3311: Starting a new Raft election for term 1.
+2385-03-28T12:11:23.808790100 2717.153481s info: Table 9702b5c9-939f-49eb-bc77-1b053d9a3311: Added replica on this server.
+2385-03-28T12:11:23.826790100 2717.171629s info: Table 9702b5c9-939f-49eb-bc77-1b053d9a3311: This server is Raft leader for term 1. Latest log index is 0.
+2385-03-28T12:11:36.770790100 2730.116574s notice: Removing file C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data\\9702b5c9-939f-49eb-bc77-1b053d9a3311
+2385-03-28T12:11:36.770790101 2730.116631s info: Table 9702b5c9-939f-49eb-bc77-1b053d9a3311: Deleted the table.
+2385-03-28T12:11:40.734790100 2734.080365s info: Table 52f70295-cd72-433b-b1a4-6391a93b1efe: Starting a new Raft election for term 1.
+2385-03-28T12:11:40.736790100 2734.082054s info: Table 52f70295-cd72-433b-b1a4-6391a93b1efe: Added replica on this server.
+2385-03-28T12:11:40.750790100 2734.096347s info: Table 52f70295-cd72-433b-b1a4-6391a93b1efe: This server is Raft leader for term 1. Latest log index is 0.
+2385-03-28T12:13:07.640790100 2820.989076s notice: Removing file C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data\\52f70295-cd72-433b-b1a4-6391a93b1efe
+2385-03-28T12:13:07.640790101 2820.989145s info: Table 52f70295-cd72-433b-b1a4-6391a93b1efe: Deleted the table.
+2385-03-28T12:13:18.345137500 2831.692736s info: Table b5468099-c349-4363-b6d0-56e39ea17b47: Starting a new Raft election for term 1.
+2385-03-28T12:13:18.347137900 2831.694124s info: Table b5468099-c349-4363-b6d0-56e39ea17b47: Added replica on this server.
+2385-03-28T12:13:18.360140500 2831.707683s info: Table b5468099-c349-4363-b6d0-56e39ea17b47: This server is Raft leader for term 1. Latest log index is 0.
+2385-03-28T14:33:57.643549700 11270.764584s notice: Removing file C:\\Users\\jr476j\\Desktop\\event-calendar\\db\\rethinkdb_data\\b5468099-c349-4363-b6d0-56e39ea17b47
+2385-03-28T14:33:57.644549700 11270.764679s info: Table b5468099-c349-4363-b6d0-56e39ea17b47: Deleted the table.
+2385-03-28T14:42:36.087549700 11789.225044s info: Table 8111020f-de06-44fa-ab9b-f786d7858f7a: Starting a new Raft election for term 1.
+2385-03-28T14:42:36.089549700 11789.226440s info: Table 8111020f-de06-44fa-ab9b-f786d7858f7a: Added replica on this server.
+2385-03-28T14:42:36.097549700 11789.234748s info: Table 8111020f-de06-44fa-ab9b-f786d7858f7a: This server is Raft leader for term 1. Latest log index is 0.
+2385-03-28T17:02:19.750111000 20172.848452s notice: Server got Control-C; shutting down...
+2385-03-28T17:02:19.751111000 20172.849989s notice: Shutting down client connections...
+2385-03-28T17:02:19.753111000 20172.851929s notice: All client connections closed.
+2385-03-28T17:02:19.753111001 20172.852035s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2385-03-28T17:02:19.833111000 20172.932218s notice: Storage engine shut down.
+2385-03-28T17:02:19.840111000 20172.939197s error: Error in thread 8 in C:\\Users\\atnnn\\Documents\\Visual Studio 2015\\Projects\\rethinkdb2\\src\\rpc/connectivity/cluster.hpp at line 217:
+2385-03-28T17:02:19.842111000 20172.940292s error: Guarantee failed: [*variable == value] 
+2385-03-28T17:02:19.842111001 20172.940803s error: Backtrace:
+2385-03-28T17:02:19.850111000 20172.948695s error: Mon Mar 28 17:02:19 2016\n\n1: 0x000000013FA27B35 [The specified module could not be found.]\n2: 0x000000013FA28161 [Attempt to access invalid address.]\n3: 0x000000013FA2753B [Attempt to access invalid address.]\n4: 0x0000000140894647 [Attempt to access invalid address.]\n5: 0x00000001411A5AEC [Attempt to access invalid address.]\n6: 0x0000000141179490 [Attempt to access invalid address.]\n7: 0x000000013FDB89AC [Attempt to access invalid address.]\n8: 0x000000013FE03652 [Attempt to access invalid address.]\n9: 0x000000013FDA92A1 [Attempt to access invalid address.]\n10: 0x000000013FD78D5C [Attempt to access invalid address.]\n11: 0x000000013FD75B67 [Attempt to access invalid address.]\n12: 0x000000013FD17F4B [Attempt to access invalid address.]\n13: 0x000000013FD180BF [Attempt to access invalid address.]\n14: 0x000000013FD26A03 [Attempt to access invalid address.]\n15: 0x000000013FD3565E [Attempt to access invalid address.]\n16: 0x000000013FD2BE7D [Attempt to access invalid address.]\n17: 0x000000013FD272AE [Attempt to access invalid address.]\n18: 0x000000013FD2608A [Attempt to access invalid address.]\n19: 0x000000013FD26EF0 [Attempt to access invalid address.]\n20: 0x000000013FD35B60 [Attempt to access invalid address.]\n21: 0x000000013FD2C384 [Attempt to access invalid address.]\n22: 0x000000013FD447D5 [Attempt to access invalid address.]\n23: 0x000000013F983053 [Attempt to access invalid address.]\n24: 0x000000013FA19BDD [Attempt to access invalid address.]\n25: 0x000000013FA17582 [Attempt to access invalid address.]\n26: 0x000000013FA184ED [Attempt to access invalid address.]\n27: 0x000000013FA178AC [Attempt to access invalid address.]\n28: 0x000000013FA1764C [Attempt to access invalid address.]\n29: 0x000000013FA1748A [Attempt to access invalid address.]\n30: 0x000000013FA17500 [Attempt to access invalid address.]\n31: 0x000000013FA18550 [Attempt to access invalid address.]\n32: 0x000000013FA17904 [Attempt to access invalid address.]\n33: 0x000000013FA194F5 [Attempt to access invalid address.]\n34: 0x000000013F983053 [Attempt to access invalid address.]\n35: 0x000000013FA19B9C [Attempt to access invalid address.]\n36: 0x000000013FA19E3B [Attempt to access invalid address.]\n37: 0x000000013F9FF394 [Attempt to access invalid address.]\n38: 0x000000013F9FDEF7 [Attempt to access invalid address.]\n39: 0x000000013F9FDE7A [Attempt to access invalid address.]\n40: CreateFiberEx+637\n41: 0x000000013FA19B48 [Attempt to access invalid address.]\n42: 0x000000013FA15825 [Attempt to access invalid address.]\n43: 0x000000013FA147E7 [Attempt to access invalid address.]\n44: 0x000000013FA1B475 [Attempt to access invalid address.]\n45: 0x000000013FA27263 [Attempt to access invalid address.]\n46: 0x000000013FA2709A [Attempt to access invalid address.]\n47: BaseThreadInitThunk+13\n48: RtlUserThreadStart+33
+2385-03-28T17:02:19.863111000 20172.961423s error: Exiting.
