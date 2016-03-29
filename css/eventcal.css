@@ -22,7 +22,7 @@ body {
 #main-wrapper.off {
   transform: translateX(0px); }
 
-#calendar-daysOfWeek {
+.calendar-daysOfWeek {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: space-between; }
 
-#calendar-daysOfWeek li {
+.calendar-daysOfWeek li {
   margin: 0;
   width: 14%;
   padding: 3px;
@@ -38,7 +38,7 @@ body {
   border: solid 1px white;
   background-color: #008080; }
 
-#calendar-week {
+.calendar-week {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -46,7 +46,7 @@ body {
   display: flex;
   justify-content: space-between; }
 
-#calendar-week li {
+.calendar-week li {
   margin: 0;
   padding: 3px;
   border: solid 1px white;
@@ -67,7 +67,7 @@ body {
   border-radius: 0px 0px 5px 0px; }
 
 #calendar {
-  width: 90%;
+  width: 70vw;
   padding: 5px;
   background-color: lightgray;
   -webkit-box-shadow: inset 0px 0px 33px -13px rgba(0, 0, 0, 0.75);
