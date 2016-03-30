@@ -24,56 +24,53 @@ body {
 #main-wrapper.off {
   width: 100%; }
 
-.calendar-daysOfWeek {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-between; }
-
-.calendar-daysOfWeek li {
-  margin: 0;
-  width: 14%;
-  padding: 3px;
-  height: 50px;
-  border: solid 1px white;
-  background-color: #008080; }
+.calendar-month {
+  position: fixed;
+  top: 25px;
+  left: 50%; }
 
 .calendar-week {
   margin: 0;
   padding: 0;
-  width: 100%;
   list-style: none;
-  display: flex;
-  justify-content: space-between; }
+  position: absolute;
+  bottom: 270px; }
+
+.calendar-week li span {
+  background-color: #008080;
+  position: absolute;
+  width: 100%;
+  padding: 5px 0px;
+  top: 0;
+  left: 0;
+  -webkit-border-top-right-radius: 2.5px;
+  border-top-right-radius: 2.5px;
+  -webkit-border-top-left-radius: 2.5px;
+  border-top-left-radius: 2.5px;
+  background-clip: padding-box;
+  color: white; }
 
 .calendar-week li {
   margin: 0;
-  padding: 3px;
-  border: solid 1px white;
-  background-color: #00abdd;
-  width: 14%;
-  height: 15vh; }
-
-.calendar-wrapper ul:first-of-type li:first-child {
-  border-radius: 5px 0px 0px 0px; }
-
-.calendar-wrapper ul:first-of-type li:last-child {
-  border-radius: 0px 5px 0px 0px; }
-
-.calendar-wrapper ul:last-of-type li:first-child {
-  border-radius: 0px 0px 0px 5px; }
-
-.calendar-wrapper ul:last-of-type li:last-child {
-  border-radius: 0px 0px 5px 0px; }
+  border: solid 3px lightgrey;
+  background-color: #9DD1D1;
+  padding: 250px 300px;
+  position: relative;
+  display: inline;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
 
 #calendar {
+  padding: 0;
   width: 90%;
-  padding: 3px 5px;
+  height: 600px;
   background-color: lightgray;
   -webkit-box-shadow: inset 0px 0px 33px -13px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0px 0px 33px -13px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0px 0px 33px -13px rgba(0, 0, 0, 0.75);
   border-radius: 2.5px;
-  display: inline-block; }
+  position: relative;
+  display: inline-block;
+  overflow: auto; }
