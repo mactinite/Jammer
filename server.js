@@ -1,9 +1,8 @@
 var express = require('express');
 var app = express();
-var favicon = require('serve-favicon');
+var r = require('rethinkdb');
 
 
-app.use(favicon(__dirname + '/images/favicon.ico'));
 app.use(express.static(__dirname));
  
 var port = 3010;
