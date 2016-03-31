@@ -1,0 +1,32 @@
+@import "layout";
+@import "mixins";
+
+body{
+    font-family: 'Abel', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+.center{
+    text-align: center;
+}
+#main-wrapper{
+    float:right;
+    width: 100%;
+    margin: auto;
+    overflow-y: auto;
+    margin-left: 2.5%;
+    padding-top: 30px;
+    text-align:center;
+    transition: all 0.2s ease 0s;
+}
+
+#main-wrapper.on{
+    width: -webkit-calc(100% - 250px);
+    width:    -moz-calc(100% - 250px);
+    width:         calc(100% - 250px);
+
+}
+#main-wrapper.off{
+    width: 100%;
+}
+
