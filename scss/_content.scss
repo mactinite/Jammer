@@ -11,7 +11,7 @@ body{
 }
 #main-wrapper{
     float:right;
-    width: 100%;
+    width: 80%;
     margin: auto;
     overflow-y: auto;
     margin-left: 2.5%;
@@ -21,12 +21,12 @@ body{
 }
 
 #main-wrapper.on{
-    width: -webkit-calc(100% - 250px);
-    width:    -moz-calc(100% - 250px);
-    width:         calc(100% - 250px);
+    // width: -webkit-calc(100% - 250px);
+    // width:    -moz-calc(100% - 250px);
+    // width:         calc(100% - 250px);
 
 }
 #main-wrapper.off{
-    width: 100%;
+    width: 80%;
 }
 

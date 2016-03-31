@@ -2,33 +2,38 @@
   width: 100%;
   font-size: 3rem;
   padding-top: 10px;
-  padding-bottom: 20px; }
+  position: relative; }
   #sidebar-brand img {
     width: 64px;
     height: 64px; }
 
 #profile-section {
   width: 100%;
+  height: 40px;
   text-align: center;
   line-height: 300%;
-  padding-top: 10px; }
+  margin-top: 30px;
+  position: relative;
+  padding-bottom: 10px; }
   #profile-section img {
-    width: 100px;
-    height: 100px;
+    width: 64px;
+    height: 64px;
     -webkit-border-radius: 150px;
     border-radius: 150px;
     background-clip: padding-box;
-    /* stops bg color from leaking outside the border: */ }
+    /* stops bg color from leaking outside the border: */
+    margin-bottom: 50px; }
 
 .sidebar {
   border-right: 2.5px solid #3D8699;
   color: white;
   width: 250px;
   background: #14A5CC;
-  position: fixed;
+  position: absolute;
   height: 100%;
   overflow-y: auto;
-  overflow: visible; }
+  overflow: visible;
+  z-index: 1000; }
   .sidebar img {
     transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1); }
 
@@ -47,9 +52,11 @@
   box-shadow: 10px 0px 25px -29px rgba(0, 0, 0, 0.33);
   transform: translateX(-200px); }
   .sidebar.off img {
-    transform: scale(0.4);
-    margin: 0;
-    float: right; }
+    transform: scale(0.5);
+    margin: auto;
+    display: flex;
+    position: absolute;
+    right: 0; }
 
 .sidebar-nav {
   position: absolute;
@@ -129,7 +136,7 @@ body {
 
 #main-wrapper {
   float: right;
-  width: 100%;
+  width: 80%;
   margin: auto;
   overflow-y: auto;
   margin-left: 2.5%;
@@ -137,10 +144,5 @@ body {
   text-align: center;
   transition: all 0.2s ease 0s; }
 
-#main-wrapper.on {
-  width: -webkit-calc(100% - 250px);
-  width: -moz-calc(100% - 250px);
-  width: calc(100% - 250px); }
-
 #main-wrapper.off {
-  width: 100%; }
+  width: 80%; }
