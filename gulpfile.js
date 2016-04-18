@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var exec = require('child_process').exec;
 
-gulp.task('sass', function() {
+gulp.task('sass', function () {
     return gulp.src('scss/**/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('css'))
@@ -13,7 +13,7 @@ gulp.task('sass', function() {
 });
 
 
-gulp.task('browserSync', function() {
+gulp.task('browserSync', function () {
     browserSync.init({
         notify: false,
         port: 3000,
@@ -21,17 +21,20 @@ gulp.task('browserSync', function() {
     })
 });
 
-gulp.task('watch', ['browserSync', 'sass'], function(cb) {
+// gulp.task('reloadServer', function (cb) {
+//     var server = (require('express'()).listen(3010));
+//     server.close();
+//     exec('node server.js', function (err, stdout, stderr) {
+//         console.log(stdout);
+//         console.log(stderr);
+//         cb(err);
+//     });
+// })
+
+gulp.task('watch', ['browserSync', 'sass'], function (cb) {
     gulp.watch('scss/**/*.scss', ['sass']);
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/*.js', browserSync.reload);
+    // gulp.watch('server.js', ['reloadServer']);
     gulp.watch('css/**/*.css', browserSync.reload);
 });
-
-gulp.task('server', function(cb) {
-    exec('node server.js', function(err, stdout, stderr) {
-        console.log(stdout);
-        console.log(stderr);
-        cb(err);
-    });
-})
