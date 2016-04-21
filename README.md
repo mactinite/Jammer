@@ -1,6 +1,6 @@
-# event-calendar
+# Jammer
  
-It's a calendar for events!
+A place for game developers to form teams and recruit other members, and be caught up on when game jams and hackathons will be running.
 
 #Setting up
 
