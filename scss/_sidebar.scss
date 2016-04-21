@@ -100,9 +100,7 @@ appears on the left side of the page.
         transform: rotate(180deg);
 }
 
-.posting-card{
-    border: 1px solid lightgray;
-}
+
 
 
 #menu-icons{
@@ -132,7 +130,7 @@ appears on the left side of the page.
 
     }
     .fa-home{
-        background: #1f8dd6;
+        background: $primary-color;
         color: white;
         
     }
@@ -199,7 +197,7 @@ appears on the left side of the page.
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: #1f8dd6;
+        background: $primary-color-dark;
     }
         /*
         This styles a link within a selected menu item `<li>`.

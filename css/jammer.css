@@ -1,4 +1,7 @@
 body {
+  color: black; }
+
+body {
   color: #777; }
 
 .pure-img-responsive {
@@ -87,9 +90,6 @@ appears on the left side of the page.
   /* Chrome, Safari, Opera */
   transform: rotate(180deg); }
 
-.posting-card {
-  border: 1px solid lightgray; }
-
 #menu-icons {
   overflow: hidden;
   position: fixed;
@@ -111,7 +111,7 @@ appears on the left side of the page.
     width: 50px;
     height: 50px; }
   #menu-icons .fa-home {
-    background: #1f8dd6;
+    background: #14A5CC;
     color: white; }
   #menu-icons i:hover {
     color: white; }
@@ -168,7 +168,7 @@ appears on the left side of the page.
     */
 #menu .pure-menu-selected,
 #menu .pure-menu-heading {
-  background: #1f8dd6; }
+  background: #3D8699; }
 
 /*
         This styles a link within a selected menu item `<li>`.
@@ -224,3 +224,124 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   #layout.active {
     position: relative;
     left: 250px; } }
+
+body {
+  color: black; }
+
+.text-center {
+  text-align: center; }
+
+.posting-area {
+  position: relative;
+  white-space: nowrap;
+  overflow-x: visible;
+  overflow-y: hidden; }
+
+.TeamPosts {
+  overflow-x: visible; }
+
+.posting-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border: 1px solid #14A5CC;
+  width: 325px;
+  display: inline-block;
+  margin: 3px;
+  height: 100px; }
+  .posting-card:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19), 0 2px 4px rgba(0, 0, 0, 0.23); }
+  .posting-card .posting-card-details {
+    font-size: 1em;
+    height: 100%;
+    float: right;
+    width: 225px;
+    vertical-align: middle;
+    line-height: 0.5; }
+    .posting-card .posting-card-details h3 {
+      color: white;
+      width: 225px;
+      padding-left: 10px;
+      background-color: #14A5CC;
+      height: 20px;
+      padding-top: 10px;
+      margin-top: 0px;
+      margin-bottom: -15px; }
+    .posting-card .posting-card-details h5 {
+      color: black;
+      padding-left: 10px;
+      margin-bottom: -10px; }
+    .posting-card .posting-card-details p {
+      padding: 15px;
+      margin-top: -10px;
+      width: 200px;
+      white-space: pre-wrap;
+      line-height: 1; }
+  .posting-card .posting-card-image {
+    display: inline-block;
+    height: 100px;
+    /* equals max image height */
+    width: 100px;
+    white-space: nowrap;
+    text-align: center; }
+    .posting-card .posting-card-image img {
+      vertical-align: middle;
+      max-height: 100px;
+      max-width: 100px; }
+
+.jam-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border: 1px solid #00FFA9;
+  width: 325px;
+  display: inline-block;
+  margin: 3px;
+  height: 100px; }
+  .jam-card:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19), 0 2px 4px rgba(0, 0, 0, 0.23); }
+  .jam-card .posting-card-details {
+    font-size: 1em;
+    height: 100%;
+    float: right;
+    width: 225px;
+    vertical-align: middle;
+    line-height: 0.5; }
+    .jam-card .posting-card-details h3 {
+      color: black;
+      width: 225px;
+      padding-left: 10px;
+      background-color: #00FFA9;
+      height: 20px;
+      padding-top: 10px;
+      margin-top: 0px;
+      margin-bottom: -15px; }
+    .jam-card .posting-card-details h5 {
+      color: black;
+      padding-left: 10px;
+      margin-bottom: -10px; }
+    .jam-card .posting-card-details p {
+      padding: 15px;
+      margin-top: -10px;
+      width: 200px;
+      white-space: pre-wrap;
+      line-height: 1; }
+  .jam-card .posting-card-image {
+    display: inline-block;
+    height: 100px;
+    /* equals max image height */
+    width: 100px;
+    white-space: nowrap;
+    text-align: center; }
+    .jam-card .posting-card-image img {
+      vertical-align: middle;
+      max-height: 100px;
+      max-width: 100px; }
