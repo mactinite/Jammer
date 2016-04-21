@@ -24,6 +24,7 @@
   "dependencies": {
     "angular": "^1.5.2",
     "express": "^4.13.4",
+    "foundation-apps": "^1.2.0",
     "passport": "^0.3.2",
     "passport-github2": "^0.1.10",
     "passport-google-oauth": "^1.0.0",
