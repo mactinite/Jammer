@@ -42,7 +42,7 @@ The content `<div>` is where all your content goes.
 .content {
     margin: 0 auto;
     padding: 0 2em;
-    max-width: 800px;
+    max-width: 100%;
     margin-bottom: 50px;
     line-height: 1.6em;
 }
@@ -214,65 +214,6 @@ appears on the left side of the page.
         color: #fff;
         margin: 0;
     }
-
-/* -- Dynamic Button For Responsive Menu -------------------------------------*/
-
-/*
-The button to open/close the Menu is custom-made and not part of Pure. Here's
-how it works:
-*/
-
-/*
-`.menu-link` represents the responsive menu toggle that shows/hides on
-small screens.
-*/
-// .menu-link {
-//     position: fixed;
-//     left: 150; /* "#menu width" */
-//     background: #000;
-//     background: rgba(0,0,0,0.7);
-//     font-size: 10px; /* change this value to increase/decrease button size */
-//     z-index: 10;
-//     width: 2em;
-//     height: auto;
-//     padding: 2.1em 1.6em;
-// }
-
-//     .menu-link:hover,
-//     .menu-link:focus {
-//         background: #000;
-//     }
-
-//     .menu-link span {
-//         position: relative;
-//         display: block;
-//     }
-
-//     .menu-link span,
-//     .menu-link span:before,
-//     .menu-link span:after {
-//         background-color: #fff;
-//         width: 100%;
-//         height: 0.2em;
-//     }
-
-//         .menu-link span:before,
-//         .menu-link span:after {
-//             position: absolute;
-//             margin-top: -0.6em;
-//             content: " ";
-//         }
-
-//         .menu-link span:after {
-//             margin-top: 0.6em;
-//         }
-
-
-/* -- Responsive Styles (Media Queries) ------------------------------------- */
-
-/*
-Hides the menu at `48em`, but modify this based on your app's needs.
-*/
 @media (min-width: 48em) {
 
     .header,

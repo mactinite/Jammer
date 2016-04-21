@@ -37,7 +37,7 @@ The content `<div>` is where all your content goes.
 .content {
   margin: 0 auto;
   padding: 0 2em;
-  max-width: 800px;
+  max-width: 100%;
   margin-bottom: 50px;
   line-height: 1.6em; }
 
@@ -184,19 +184,6 @@ appears on the left side of the page.
   color: #fff;
   margin: 0; }
 
-/* -- Dynamic Button For Responsive Menu -------------------------------------*/
-/*
-The button to open/close the Menu is custom-made and not part of Pure. Here's
-how it works:
-*/
-/*
-`.menu-link` represents the responsive menu toggle that shows/hides on
-small screens.
-*/
-/* -- Responsive Styles (Media Queries) ------------------------------------- */
-/*
-Hides the menu at `48em`, but modify this based on your app's needs.
-*/
 @media (min-width: 48em) {
   .header,
   .content {
@@ -228,14 +215,16 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 body {
   color: black; }
 
+#main {
+  max-width: 100%;
+  margin: 0 auto; }
+
 .text-center {
   text-align: center; }
 
 .posting-area {
   position: relative;
-  white-space: nowrap;
-  overflow-x: visible;
-  overflow-y: hidden; }
+  white-space: nowrap; }
 
 .TeamPosts {
   overflow-x: visible; }

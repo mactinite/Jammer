@@ -1,7 +1,10 @@
 @import "layout";
 @import "mixins";
 
-
+#main {
+    max-width: 100%;
+    margin: 0 auto;
+}
 
 .text-center{
     text-align: center;
@@ -9,13 +12,9 @@
 }
 
 
-
 .posting-area{
     position: relative;
     white-space: nowrap;
-    overflow-x: visible;
-    overflow-y: hidden;
-
 }
 .TeamPosts{
         overflow-x: visible;
