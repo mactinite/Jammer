@@ -67,9 +67,9 @@
         <div class="content">
             <h2 class="content-subhead">Upcoming Jams</h2>
             <section ng-controller="postingArea"><p>Here are some popular upcoming jams</p>
-            <div class="TeamPosts" >       
+            <div class="JamPosts" >       
                 <div class="posting-area">       
-                    <div class ="mCustomScrollbar"  data-mcs-axis="x" data-mcs-theme="dark-3"> 
+                    <div class ="mCustomScrollbar"  data-mcs-axis="y" data-mcs-theme="dark-3"> 
                     <div class="jam-card" ng-repeat="i in getNumber(10) track by $index">
                         <div class="posting-card-image">
                             <span class="helper"></span>
@@ -81,7 +81,6 @@
                             <p> This jam is awesome!<p>
                         </div>
                     </div>
-                    
                     </div>
                  </div>
                 <p class="text-center"><a href='#' class="" >See More</a></p>
@@ -93,7 +92,7 @@
                 <h3 class="content-subhead">Looking For {{type}}...</h3>
                 <div class="posting-area ">
                     
-                    <div class ="mCustomScrollbar"  data-mcs-axis="x" data-mcs-theme="dark-3"> 
+                    <div class ="mCustomScrollbar"  data-mcs-axis ="y" data-mcs-theme="dark-thick"> 
                     <div class="posting-card" ng-repeat="i in getNumber(10) track by $index">
                         <div class="posting-card-image">
                             <span class="helper"></span>
