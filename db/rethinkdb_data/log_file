@@ -335,3 +335,8 @@
 2385-04-22T14:02:41.364596200 2.053527s info: Table e21e7f74-eed0-4c04-b0b3-d8d2dcb107d0: This server is Raft leader for term 7. Latest log index is 17.
 2385-04-22T14:03:09.703249000 30.369853s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
 2385-04-22T14:03:09.704249800 30.370077s debug: Error in HTTP GET of `https://update.rethinkdb.com/update_for/2.2.4-windows-alpha-4`: timed out after 30.000 seconds.
+2385-04-22T17:15:37.444425500 11579.384439s notice: Server got Control-C; shutting down...
+2385-04-22T17:15:37.445425600 11579.385520s notice: Shutting down client connections...
+2385-04-22T17:15:37.446425700 11579.386562s notice: All client connections closed.
+2385-04-22T17:15:37.446425701 11579.386608s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2385-04-22T17:15:37.536434700 11579.476136s notice: Storage engine shut down.
