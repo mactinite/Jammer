@@ -22,6 +22,15 @@ app.listen(port, function () {
   console.log('server listening on port ' + port);
 });
 
+/* 
+    ==================
+          Routes      
+    ==================
+*/
+var posts = require('./app/routes/posts');
+app.use('/', posts);
+
+
 passport.use(new GitHubStrategy({
   clientID: "1808dd1ef99c8682c796",
   clientSecret: "a01d81440641ced60eb90514b4973670210eafef",
@@ -41,11 +50,6 @@ passport.use(new GitHubStrategy({
 app.get('/login',
   passport.authenticate('github', { scope: ['user:email'] }));
 
-app.post('/asdf', function (req, res) {
-  console.log(req.body);
-  console.log("hello");
-});
-
 app.get('/auth/github/callback',
   passport.authenticate('github', { failureRedirect: '/login' }),
   function (req, res) {
@@ -64,7 +68,5 @@ app.get('/dbTest', function (req, res, next) {
         res.send(JSON.stringify(result, null, 2));
       });
   });
-
-
-
 });
+
