@@ -31,7 +31,7 @@ app.listen(port, function () {
 var posts = require('./app/routes/posts');
 app.use('/', posts);
 
-var auth = require('./app/auth/oauth')(passport, GitHubStrategy);
+var auth = require('./app/routes/auth')(passport, GitHubStrategy);
 app.use('/', auth);
 
 
