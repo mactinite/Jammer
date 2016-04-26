@@ -340,3 +340,58 @@
 2385-04-22T17:15:37.446425700 11579.386562s notice: All client connections closed.
 2385-04-22T17:15:37.446425701 11579.386608s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
 2385-04-22T17:15:37.536434700 11579.476136s notice: Storage engine shut down.
+2385-04-23T13:25:25.084488700 0.117227s notice: In recursion: removing file 'C:\\Users\\Justin\\Desktop\\jammer\\db\\rethinkdb_data\\tmp'
+2385-04-23T13:25:25.089971000 0.122689s warn: Trying to delete non-existent file 'C:\\Users\\Justin\\Desktop\\jammer\\db\\rethinkdb_data\\tmp'
+2385-04-23T13:25:25.105139700 0.137886s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-04-23T13:25:25.107144000 0.139956s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2385-04-23T13:25:25.108145300 0.141225s notice: Loading data from directory C:\\Users\\Justin\\Desktop\\jammer\\db\\rethinkdb_data
+2385-04-23T13:25:25.250177500 0.283250s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-23T13:25:25.307723200 0.340542s info: Automatically using cache size of 12686 MB
+2385-04-23T13:25:25.325727100 0.358561s notice: Listening for intracluster connections on port 29015
+2385-04-23T13:25:25.961572500 0.994285s notice: Listening for client driver connections on port 28015
+2385-04-23T13:25:25.965074400 0.997894s notice: Listening for administrative HTTP connections on port 8080
+2385-04-23T13:25:25.965074401 0.997966s notice: Listening on address: 127.0.0.1
+2385-04-23T13:25:25.965074402 0.997990s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2385-04-23T13:25:25.965074403 0.998013s notice: Server ready, "WACDTL23SG292E_tml" d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-23T13:25:26.557849800 1.590635s notice: A newer version of the RethinkDB server is available: 2.2.6. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2385-04-23T13:25:27.389255500 2.422021s info: Table bd7d3c7b-67a6-4594-adaa-4ad6efe635b2: Starting a new Raft election for term 3.
+2385-04-23T13:25:27.410581000 2.443732s info: Table bd7d3c7b-67a6-4594-adaa-4ad6efe635b2: This server is Raft leader for term 3. Latest log index is 5.
+2385-04-23T13:25:27.576671200 2.609738s info: Table e21e7f74-eed0-4c04-b0b3-d8d2dcb107d0: Starting a new Raft election for term 8.
+2385-04-23T13:25:27.586176700 2.618947s info: Table e21e7f74-eed0-4c04-b0b3-d8d2dcb107d0: This server is Raft leader for term 8. Latest log index is 20.
+2385-04-23T13:25:36.002908100 11.035633s notice: Server got Control-C; shutting down...
+2385-04-23T13:25:36.003908100 11.037002s notice: Shutting down client connections...
+2385-04-23T13:25:36.004408000 11.037509s notice: All client connections closed.
+2385-04-23T13:25:36.004408001 11.037540s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2385-04-23T13:25:36.074699500 11.107813s notice: Storage engine shut down.
+2385-04-23T13:26:01.495643800 0.033846s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-04-23T13:26:01.498147000 0.036178s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2385-04-23T13:26:01.499147000 0.037411s notice: Loading data from directory C:\\Users\\Justin\\Desktop\\jammer\\db\\rethinkdb_data
+2385-04-23T13:26:01.534672600 0.073094s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-23T13:26:01.543681400 0.081978s info: Automatically using cache size of 12639 MB
+2385-04-23T13:26:01.548182200 0.086642s notice: Listening for intracluster connections on port 29015
+2385-04-23T13:26:01.857879600 0.396169s notice: Listening for client driver connections on port 28015
+2385-04-23T13:26:01.861380900 0.399621s notice: Listening for administrative HTTP connections on port 8080
+2385-04-23T13:26:01.861380901 0.399656s notice: Listening on address: 127.0.0.1
+2385-04-23T13:26:01.861380902 0.399683s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2385-04-23T13:26:01.861380903 0.399818s notice: Server ready, "WACDTL23SG292E_tml" d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-23T13:26:02.145400400 0.683884s notice: A newer version of the RethinkDB server is available: 2.2.6. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2385-04-23T13:26:03.260164300 1.798656s info: Table bd7d3c7b-67a6-4594-adaa-4ad6efe635b2: Starting a new Raft election for term 4.
+2385-04-23T13:26:03.265198500 1.803531s info: Table bd7d3c7b-67a6-4594-adaa-4ad6efe635b2: This server is Raft leader for term 4. Latest log index is 8.
+2385-04-23T13:26:03.273204400 1.811578s info: Table e21e7f74-eed0-4c04-b0b3-d8d2dcb107d0: Starting a new Raft election for term 9.
+2385-04-23T13:26:03.282211300 1.820598s info: Table e21e7f74-eed0-4c04-b0b3-d8d2dcb107d0: This server is Raft leader for term 9. Latest log index is 23.
+2385-04-25T21:47:07.177578400 0.036684s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-04-25T21:47:07.180579200 0.039640s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2385-04-25T21:47:07.181579000 0.041029s notice: Loading data from directory C:\\Users\\Justin\\Desktop\\jammer\\db\\rethinkdb_data
+2385-04-25T21:47:07.221595000 0.080788s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-25T21:47:07.230597400 0.089723s info: Automatically using cache size of 12944 MB
+2385-04-25T21:47:07.235600600 0.094653s notice: Listening for intracluster connections on port 29015
+2385-04-25T21:47:07.545716100 0.405347s notice: Listening for client driver connections on port 28015
+2385-04-25T21:47:07.548717200 0.408411s notice: Listening for administrative HTTP connections on port 8080
+2385-04-25T21:47:07.548717201 0.408469s notice: Listening on address: 127.0.0.1
+2385-04-25T21:47:07.548717202 0.408494s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2385-04-25T21:47:07.548717203 0.408522s notice: Server ready, "WACDTL23SG292E_tml" d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-25T21:47:08.023053800 0.882501s notice: A newer version of the RethinkDB server is available: 2.3.1. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2385-04-25T21:47:09.293384800 2.152615s info: Table bd7d3c7b-67a6-4594-adaa-4ad6efe635b2: Starting a new Raft election for term 5.
+2385-04-25T21:47:09.298387000 2.158109s info: Table e21e7f74-eed0-4c04-b0b3-d8d2dcb107d0: Starting a new Raft election for term 10.
+2385-04-25T21:47:09.352407000 2.211632s info: Table bd7d3c7b-67a6-4594-adaa-4ad6efe635b2: This server is Raft leader for term 5. Latest log index is 11.
+2385-04-25T21:47:09.378513400 2.238021s info: Table e21e7f74-eed0-4c04-b0b3-d8d2dcb107d0: This server is Raft leader for term 10. Latest log index is 26.

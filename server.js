@@ -3,8 +3,9 @@ var express = require('express');
 var app = express();
 var r = require('rethinkdb');
 var passport = require('passport');
-var GitHubStrategy = require('passport-github2').Strategy;
 var bodyParser = require('body-parser');
+var GitHubStrategy = require('passport-github2').Strategy;
+
 
 
 app.use(express.static(__dirname));
@@ -30,32 +31,12 @@ app.listen(port, function () {
 var posts = require('./app/routes/posts');
 app.use('/', posts);
 
+var auth = require('./app/auth/oauth')(passport, GitHubStrategy);
+app.use('/', auth);
 
-passport.use(new GitHubStrategy({
-  clientID: "1808dd1ef99c8682c796",
-  clientSecret: "a01d81440641ced60eb90514b4973670210eafef",
-  callbackURL: "http://127.0.0.1:3010/auth/github/callback"
-}, function (accessToken, refreshToken, profile, cb) {
-  console.log(profile);
-  // r.connect({ host: 'localhost', port: 28015 }).then(function (c) {
-  //   return r.db("Jammer").table("User").get('asdf');
-  // })
-  //   .then(function (cursor) {
-  //     cursor.each(function (err, item) {
-  //       console.log(item);
-  //     });
-  //   });
-}));
 
-app.get('/login',
-  passport.authenticate('github', { scope: ['user:email'] }));
 
-app.get('/auth/github/callback',
-  passport.authenticate('github', { failureRedirect: '/login' }),
-  function (req, res) {
-    // Successful authentication, redirect home.
-    res.redirect('/');
-  });
+
 
 app.get('/dbTest', function (req, res, next) {
   var connection = null;

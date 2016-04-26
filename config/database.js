@@ -1,16 +1,21 @@
 'use strict';
 
-var dbInfo = {
-    host: 'localhost',
-    port: 28015,
-    db: 'Jammer'
-};
-
+const schema = 'Jammer';
 
 module.exports = {
-    db: dbInfo,
-    table:{
+
+    connect: function () {
+        const r = require('rethinkdb');
+        return (r.connect({ db: schema }));
+    },
+    
+    host: 'localhost',
+    port: 28015,
+    schema: schema,
+    table: {
         jam: "Jam",
         user: "User"
     }
+
+
 };
