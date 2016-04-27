@@ -419,3 +419,77 @@
 2385-04-26T16:54:22.906519400 20225.225618s notice: All client connections closed.
 2385-04-26T16:54:22.906519401 20225.225686s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
 2385-04-26T16:54:23.252519400 20225.571871s notice: Storage engine shut down.
+2385-04-27T15:45:50.317986300 0.049099s notice: In recursion: removing file 'C:\\Node Workspace\\jammer\\db\\rethinkdb_data\\tmp'
+2385-04-27T15:45:50.317986301 0.049938s warn: Trying to delete non-existent file 'C:\\Node Workspace\\jammer\\db\\rethinkdb_data\\tmp'
+2385-04-27T15:45:50.320986600 0.052777s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-04-27T15:45:50.321986700 0.053379s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2385-04-27T15:45:50.321986701 0.053766s notice: Loading data from directory C:\\Node Workspace\\jammer\\db\\rethinkdb_data
+2385-04-27T15:45:50.375992100 0.107853s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-27T15:45:50.384993000 0.116911s info: Automatically using cache size of 3017 MB
+2385-04-27T15:45:50.401994700 0.133930s notice: Listening for intracluster connections on port 29015
+2385-04-27T15:45:50.673021800 0.404905s notice: Listening for client driver connections on port 28015
+2385-04-27T15:45:50.676022100 0.407098s warn: bind failed: An attempt was made to access a socket in a way forbidden by its access permissions.
+2385-04-27T15:45:50.727027200 0.458327s error: Could not bind to http port: The address at localhost:8080 is reserved or already in use.
+2385-04-27T15:49:37.984750700 0.038697s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-04-27T15:49:37.985750800 0.039446s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2385-04-27T15:49:37.985750801 0.039883s notice: Loading data from directory C:\\Node Workspace\\jammer\\db\\rethinkdb_data
+2385-04-27T15:49:38.038756100 0.092565s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-27T15:49:38.046756900 0.101081s info: Automatically using cache size of 3091 MB
+2385-04-27T15:49:38.062758500 0.117166s notice: Listening for intracluster connections on port 29015
+2385-04-27T15:49:38.309783200 0.364046s notice: Listening for client driver connections on port 28015
+2385-04-27T15:49:38.311783400 0.366194s warn: bind failed: An attempt was made to access a socket in a way forbidden by its access permissions.
+2385-04-27T15:49:38.359788200 0.413697s error: Could not bind to http port: The address at localhost:8080 is reserved or already in use.
+2385-04-27T15:50:43.478299400 0.113646s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-04-27T15:50:43.480299600 0.115991s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2385-04-27T15:50:43.481299700 0.117278s notice: Loading data from directory C:\\Node Workspace\\jammer\\db\\rethinkdb_data
+2385-04-27T15:50:43.631314700 0.267277s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-27T15:50:43.656317200 0.291722s info: Automatically using cache size of 3119 MB
+2385-04-27T15:50:43.701321700 0.336950s notice: Listening for intracluster connections on port 29015
+2385-04-27T15:50:44.858437400 1.493765s notice: Listening for client driver connections on port 28015
+2385-04-27T15:50:44.863437900 1.499171s warn: bind failed: An attempt was made to access a socket in a way forbidden by its access permissions.
+2385-04-27T15:50:45.009452500 1.644815s error: Could not bind to http port: The address at localhost:8080 is reserved or already in use.
+2385-04-27T15:51:58.040754900 0.097826s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-04-27T15:51:58.042755100 0.099726s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2385-04-27T15:51:58.043755200 0.100735s notice: Loading data from directory C:\\Node Workspace\\jammer\\db\\rethinkdb_data
+2385-04-27T15:51:58.172768100 0.229973s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-27T15:51:58.193770200 0.251238s info: Automatically using cache size of 3113 MB
+2385-04-27T15:51:58.232774100 0.289877s notice: Listening for intracluster connections on port 29015
+2385-04-27T15:51:59.387889600 1.444976s notice: Listening for client driver connections on port 28015
+2385-04-27T15:51:59.392890100 1.450191s warn: bind failed: An attempt was made to access a socket in a way forbidden by its access permissions.
+2385-04-27T15:51:59.598910700 1.656418s error: Could not bind to http port: The address at localhost:8080 is reserved or already in use.
+2385-04-27T15:53:31.764126300 0.102169s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-04-27T15:53:31.765126400 0.103543s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2385-04-27T15:53:31.766126500 0.104388s notice: Loading data from directory C:\\Node Workspace\\jammer\\db\\rethinkdb_data
+2385-04-27T15:53:31.882138100 0.220348s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-27T15:53:31.899139800 0.237878s info: Automatically using cache size of 3534 MB
+2385-04-27T15:53:31.934143300 0.272299s notice: Listening for intracluster connections on port 29015
+2385-04-27T15:53:32.840233900 1.178987s notice: Listening for client driver connections on port 28015
+2385-04-27T15:53:32.845234400 1.183602s warn: bind failed: An attempt was made to access a socket in a way forbidden by its access permissions.
+2385-04-27T15:53:33.019251800 1.357704s error: Could not bind to http port: The address at localhost:8080 is reserved or already in use.
+2385-04-27T15:57:23.451292700 0.040547s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-04-27T15:57:23.452292800 0.041274s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2385-04-27T15:57:23.452292801 0.041695s notice: Loading data from directory C:\\Node Workspace\\jammer\\db\\rethinkdb_data
+2385-04-27T15:57:23.505298100 0.094707s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-27T15:57:23.513298900 0.102934s info: Automatically using cache size of 3502 MB
+2385-04-27T15:57:23.530300600 0.119323s notice: Listening for intracluster connections on port 29015
+2385-04-27T15:57:23.784326000 0.373685s notice: Listening for client driver connections on port 28015
+2385-04-27T15:57:23.786326200 0.375906s warn: bind failed: An attempt was made to access a socket in a way forbidden by its access permissions.
+2385-04-27T15:57:23.831330700 0.420644s error: Could not bind to http port: The address at localhost:8080 is reserved or already in use.
+2385-04-27T16:04:01.796123200 0.040752s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-04-27T16:04:01.797123300 0.041485s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2385-04-27T16:04:01.797123301 0.041877s notice: Loading data from directory C:\\Node Workspace\\jammer\\db\\rethinkdb_data
+2385-04-27T16:04:01.861129700 0.105704s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-27T16:04:01.869130500 0.114196s info: Automatically using cache size of 3421 MB
+2385-04-27T16:04:01.887132300 0.131321s notice: Listening for intracluster connections on port 29015
+2385-04-27T16:04:02.179161500 0.423678s notice: Listening for client driver connections on port 28015
+2385-04-27T16:04:02.182161800 0.426912s warn: bind failed: An attempt was made to access a socket in a way forbidden by its access permissions.
+2385-04-27T16:04:02.234167000 0.478595s error: Could not bind to http port: The address at localhost:8080 is reserved or already in use.
+2385-04-27T16:05:47.066649200 0.042959s notice: Running rethinkdb 2.2.4-windows-alpha-4 (debug) (MSC 190023506)...
+2385-04-27T16:05:47.067649300 0.044003s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2385-04-27T16:05:47.068649400 0.044445s notice: Loading data from directory C:\\Node Workspace\\jammer\\db\\rethinkdb_data
+2385-04-27T16:05:47.127655300 0.103345s notice: Our server ID is d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-04-27T16:05:47.138656400 0.114367s info: Automatically using cache size of 3399 MB
+2385-04-27T16:05:47.160658600 0.136365s notice: Listening for intracluster connections on port 29015
+2385-04-27T16:05:47.577700300 0.554000s notice: Listening for client driver connections on port 28015
+2385-04-27T16:05:47.580700600 0.556924s warn: bind failed: An attempt was made to access a socket in a way forbidden by its access permissions.
+2385-04-27T16:05:47.646707200 0.622732s error: Could not bind to http port: The address at localhost:8080 is reserved or already in use.

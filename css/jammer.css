@@ -45,19 +45,8 @@ The content `<div>` is where all your content goes.
   margin: 0;
   color: #333;
   text-align: center;
-  padding: 2.5em 2em 0;
+  padding: 2.5em 0 0.5em 0;
   border-bottom: 1px solid #eee; }
-
-.header h1 {
-  margin: 0.2em 0;
-  font-size: 3em;
-  font-weight: 300; }
-
-.header h2 {
-  font-weight: 300;
-  color: #ccc;
-  padding: 0;
-  margin-top: 0; }
 
 .content-subhead {
   margin: 50px 0 20px 0;
@@ -69,6 +58,7 @@ The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.
 */
 #menu-wrapper {
+  position: fixed;
   width: 250px;
   height: 100%;
   top: 0;
@@ -219,6 +209,9 @@ body {
   max-width: 100%;
   margin: 0 auto; }
 
+.content {
+  text-align: center; }
+
 .text-center {
   text-align: center; }
 
@@ -233,16 +226,32 @@ body {
   .JamPosts .posting-area {
     text-align: center;
     height: 100%;
-    overflow: auto; }
+    overflow-y: hidden; }
 
 .TeamPosts {
   overflow: hidden;
   min-width: 350px;
-  max-width: 25%;
   display: inline-block; }
   .TeamPosts .posting-area {
     overflow: hidden;
     text-align: center; }
+    .TeamPosts .posting-area .posts-gradient {
+      position: relative;
+      width: 100%; }
+      .TeamPosts .posting-area .posts-gradient::before {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+66,1+100 */
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 65%, white 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 65%, white 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 65%, white 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+        /* IE6-9 */
+        content: "\00a0"; }
 
 ::-webkit-scrollbar {
   width: 12px; }
@@ -314,6 +323,8 @@ body {
       max-height: 100px;
       max-width: 100px; }
 
-.jam-card .posting-card-details h3 {
-  background-color: #00FFA9;
-  color: grey; }
+.jam-card {
+  display: inline-block; }
+  .jam-card .posting-card-details h3 {
+    background-color: #00FFA9;
+    color: grey; }

@@ -9,6 +9,14 @@
     <script src="/node_modules/angular/angular.js" type="application/javascript"></script>
     <script src="/js/controllers.js" type="application/javascript"></script>
     <link rel="stylesheet" href="css/pure.css">
+    
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <!--<![endif]-->
+    
     <link rel="stylesheet" href="css/jammer.css">
     <link rel="stylesheet" href="css/font-awesome/font-awesome.css">
     
@@ -58,16 +66,18 @@
     </div>
 
 
-    <div id="main">
-        <div class="header">
-            <h1>Jammer.io</h1>
-            <h2>Welcome to Jammer.</h2>
-        </div>
+    <div id="main pure-g">
+
 
         <div class="content">
+            <div class="pure-u-lg-1">
+                <h1 class="header">Jammer.social</h1>
+            </div>
+
+            
             <h2 class="content-subhead">Upcoming Jams</h2>
-            <section ng-controller="postingArea"><p>Here are some popular upcoming jams</p>
-            <div class="JamPosts" >       
+            <section class="pure-u-lg-5-5" ng-controller="postingArea"><p>Here are some popular upcoming jams</p>
+            <div class="JamPosts">       
                 <div class="posting-area">       
                     <div class ="mCustomScrollbar"  data-mcs-axis="y" data-mcs-theme="dark-3"> 
                     <div class="jam-card" ng-repeat="i in getNumber(10) track by $index">
@@ -83,16 +93,15 @@
                     </div>
                     </div>
                  </div>
-                <p class="text-center"><a href='#' class="" >See More</a></p>
+                <p class="text-center"><a href='#' class="pure-button" >See More</a></p>
             </div>
             </section>
             <h2 class="content-subhead">Classifieds</h2>
-            <section ng-controller="postingArea"><p>All new teammate requests!. Check it out!</p>
-            <div class="TeamPosts" ng-repeat="type in jobTypes">       
+            <section class="pure-u-lg-5-5" ng-controller="postingArea"><p>All new teammate requests!. Check it out!</p>
+            <div class="TeamPosts pure-u-lg-1-5" ng-repeat="type in jobTypes">       
                 <h3 class="content-subhead">Looking For {{type}}...</h3>
                 <div class="posting-area ">
-                    
-                    <div class ="mCustomScrollbar"  data-mcs-axis ="y" data-mcs-theme="dark-thick"> 
+                    <div class="posts-gradient">
                     <div class="posting-card" ng-repeat="i in getNumber(10) track by $index">
                         <div class="posting-card-image">
                             <span class="helper"></span>
