@@ -241,7 +241,7 @@ body {
   max-width: 25%;
   display: inline-block; }
   .TeamPosts .posting-area {
-    overflow: auto;
+    overflow: hidden;
     text-align: center; }
 
 ::-webkit-scrollbar {
