@@ -1,7 +1,16 @@
+'use strict';
+
+
 module.exports = {
-    rethinkdb: {
-        host: 'localhost',
-        port: 28015,
-        db: 'passport_rethinkdb_tutorial'
+
+    
+    host: 'localhost',
+    port: 28015,
+    schema: 'Jammer',
+    table: {
+        jam: "Jam",
+        user: "User"
     }
+
+
 };

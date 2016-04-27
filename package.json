@@ -1,15 +1,16 @@
 {
   "scripts": {
     "server": "nodemon server.js",
-    "start": "start npm run server && gulp watch"
+    "database": "cd db && rethinkdb.exe",
+    "start": "start npm run server && start npm run database && gulp watch"
   },
-  "name": "event-calendar",
+  "name": "jammer",
   "description": "This is a project. Possibly done by more than one person!",
   "version": "0.0.0",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/justross/event-calendar.git"
+    "url": "git+https://github.com/justross/jammer.git"
   },
   "keywords": [
     "Event",
@@ -18,9 +19,9 @@
   "author": "Justin Ross",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/justross/event-calendar/issues"
+    "url": "https://github.com/justross/jammer/issues"
   },
-  "homepage": "https://github.com/justross/event-calendar#readme",
+  "homepage": "https://github.com/justross/jammer#readme",
   "dependencies": {
     "angular": "^1.5.2",
     "body-parser": "^1.15.0",
