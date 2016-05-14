@@ -5,10 +5,11 @@ var r = require('rethinkdb');
 var passport = require('passport');
 var bodyParser = require('body-parser');
 var GitHubStrategy = require('passport-github2').Strategy;
+var path = require('path');
 
 
 
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'views')));
 
 app.use(bodyParser.urlencoded({
   extended: true
@@ -28,13 +29,16 @@ app.listen(port, function () {
           Routes      
     ==================
 */
-var posts = require('./app/routes/posts');
-app.use('/', posts);
+
+var posts = require('./app/routes/posts')();
+app.use('/api/', posts);
 
 var auth = require('./app/routes/auth')(passport, GitHubStrategy);
 app.use('/', auth);
 
-
+app.get('/jamPosts', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/test.html'));
+});
 
 
 

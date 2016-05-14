@@ -5,7 +5,8 @@ var Jam = thinky.createModel('Jam', {
     startDate: type.date(),
     endDate: type.date(),
     name: type.string(),
-    imageURL: type.string()
+    imageURL: type.string(),
+    inProgress: type.boolean()
     
 });
 
