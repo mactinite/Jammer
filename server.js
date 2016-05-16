@@ -4,8 +4,10 @@ var app = express();
 var r = require('rethinkdb');
 var passport = require('passport');
 var bodyParser = require('body-parser');
+var session = require('express-session');
 var GitHubStrategy = require('passport-github2').Strategy;
 var path = require('path');
+var uuid = require('uuid');
 
 
 
@@ -18,6 +20,26 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json({
   extended: true
 }));
+
+
+app.use(session({
+  genid: function () { uuid.v4(); },
+  secret: 'Jammer is the jam',
+  resave: true,
+  saveUninitialized: true
+}))
+
+passport.serializeUser(function (user, done) {
+  done(null, user);
+});
+
+passport.deserializeUser(function (user, done) {
+  done(null, user);
+});
+
+app.use(passport.initialize());
+
+app.use(passport.session());
 
 var port = 3010;
 app.listen(port, function () {
@@ -36,7 +58,7 @@ app.use('/api/', posts);
 var auth = require('./app/routes/auth')(passport, GitHubStrategy);
 app.use('/', auth);
 
-app.get('/jamPosts', function(req, res){
+app.get('/jamPosts', function (req, res) {
   res.sendFile(path.join(__dirname, 'views/test.html'));
 });
 

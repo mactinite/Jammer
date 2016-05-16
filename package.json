@@ -24,8 +24,11 @@
   "homepage": "https://github.com/justross/jammer#readme",
   "dependencies": {
     "angular": "^1.5.2",
+    "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
+    "express-session": "^1.13.0",
     "foundation-apps": "^1.2.0",
     "passport": "^0.3.2",
     "passport-github2": "^0.1.10",
@@ -36,7 +39,8 @@
     "passport-oauth": "^1.0.0",
     "passport-openid": "^0.4.0",
     "rethinkdb": "^2.2.2",
-    "thinky": "^2.2.6"
+    "thinky": "^2.2.6",
+    "uuid": "^2.0.2"
   },
   "devDependencies": {
     "browser-sync": "^2.11.2",

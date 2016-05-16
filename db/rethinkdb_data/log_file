@@ -676,3 +676,47 @@
 2385-05-12T16:45:36.376487301 3.634181s info: Table 875fd0ec-4d22-406a-85cc-ca56c63eb780: Added replica on this server.
 2385-05-12T16:45:36.380487300 3.638309s info: Table 875fd0ec-4d22-406a-85cc-ca56c63eb780: This server is Raft leader for term 1. Latest log index is 0.
 2385-05-12T16:46:03.018487300 30.277120s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
+2385-05-14T11:12:00.735693300 0.010962s notice: Running rethinkdb 2.3.1-windows-beta (MSC 190023506)...
+2385-05-14T11:12:00.736693000 0.012760s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2385-05-14T11:12:00.738694400 0.014278s notice: Loading data from directory C:\\Users\\Justin\\Desktop\\jammer\\db\\rethinkdb_data
+2385-05-14T11:12:00.820176600 0.096022s info: Automatically using cache size of 13385 MB
+2385-05-14T11:12:00.823177800 0.099143s notice: Listening for intracluster connections on port 29015
+2385-05-14T11:12:00.900443900 0.175602s notice: Listening for client driver connections on port 28015
+2385-05-14T11:12:00.900443901 0.175842s notice: Listening for administrative HTTP connections on port 8080
+2385-05-14T11:12:00.900443902 0.175858s notice: Listening on cluster address: 127.0.0.1
+2385-05-14T11:12:00.900443903 0.175859s notice: Listening on driver address: 127.0.0.1
+2385-05-14T11:12:00.900443904 0.175860s notice: Listening on http address: 127.0.0.1
+2385-05-14T11:12:00.900443905 0.175861s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2385-05-14T11:12:00.900443906 0.175862s notice: Server ready, "WACDTL23SG292E_tml" d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-05-14T11:12:01.329608900 0.605694s notice: A newer version of the RethinkDB server is available: 2.3.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2385-05-14T11:12:02.613879100 1.889155s info: Table bd7d3c7b-67a6-4594-adaa-4ad6efe635b2: Starting a new Raft election for term 8.
+2385-05-14T11:12:02.619881600 1.895686s info: Table bd7d3c7b-67a6-4594-adaa-4ad6efe635b2: This server is Raft leader for term 8. Latest log index is 20.
+2385-05-14T11:12:02.625883900 1.901113s info: Table e21e7f74-eed0-4c04-b0b3-d8d2dcb107d0: Starting a new Raft election for term 13.
+2385-05-14T11:12:02.641875600 1.917935s info: Table e21e7f74-eed0-4c04-b0b3-d8d2dcb107d0: This server is Raft leader for term 13. Latest log index is 35.
+2385-05-14T11:12:02.871597600 2.146862s info: Table 875fd0ec-4d22-406a-85cc-ca56c63eb780: Starting a new Raft election for term 2.
+2385-05-14T11:12:02.883602500 2.159628s info: Table 875fd0ec-4d22-406a-85cc-ca56c63eb780: This server is Raft leader for term 2. Latest log index is 3.
+2385-05-14T13:39:22.236453200 8841.511790s error: Failed to parse one or more lines from the log file, the contents of the `logs` system table will be incomplete. The following parse error occurred: cannot parse log message (2) while parsing "<<<<<<< 026966b6d2684e1ed3801de4af35ab4e74aceb07?"
+2385-05-14T23:31:31.973988300 44371.249381s notice: Server got Control-C; shutting down...
+2385-05-14T23:31:31.974490100 44371.249677s notice: Shutting down client connections...
+2385-05-14T23:31:31.975489200 44371.251056s notice: All client connections closed.
+2385-05-14T23:31:31.975489201 44371.251060s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2385-05-14T23:31:31.981992600 44371.257438s notice: Storage engine shut down.
+2385-05-14T23:38:06.564142600 0.010269s notice: Running rethinkdb 2.3.1-windows-beta (MSC 190023506)...
+2385-05-14T23:38:06.565642800 0.011775s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2385-05-14T23:38:06.566642900 0.013199s notice: Loading data from directory C:\\Users\\Justin\\Desktop\\jammer\\db\\rethinkdb_data
+2385-05-14T23:38:06.577148700 0.023674s info: Automatically using cache size of 12722 MB
+2385-05-14T23:38:06.579148200 0.025380s notice: Listening for intracluster connections on port 29015
+2385-05-14T23:38:06.604657500 0.050865s notice: Listening for client driver connections on port 28015
+2385-05-14T23:38:06.604657501 0.051061s notice: Listening for administrative HTTP connections on port 8080
+2385-05-14T23:38:06.604657502 0.051064s notice: Listening on cluster address: 127.0.0.1
+2385-05-14T23:38:06.604657503 0.051077s notice: Listening on driver address: 127.0.0.1
+2385-05-14T23:38:06.604657504 0.051078s notice: Listening on http address: 127.0.0.1
+2385-05-14T23:38:06.604657505 0.051079s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2385-05-14T23:38:06.604657506 0.051080s notice: Server ready, "WACDTL23SG292E_tml" d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-05-14T23:38:06.917108100 0.363265s notice: A newer version of the RethinkDB server is available: 2.3.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2385-05-14T23:38:07.668570400 1.114752s info: Table 875fd0ec-4d22-406a-85cc-ca56c63eb780: Starting a new Raft election for term 3.
+2385-05-14T23:38:07.671571300 1.117870s info: Table 875fd0ec-4d22-406a-85cc-ca56c63eb780: This server is Raft leader for term 3. Latest log index is 6.
+2385-05-14T23:38:07.847950600 1.294224s info: Table bd7d3c7b-67a6-4594-adaa-4ad6efe635b2: Starting a new Raft election for term 9.
+2385-05-14T23:38:07.850450600 1.296564s info: Table bd7d3c7b-67a6-4594-adaa-4ad6efe635b2: This server is Raft leader for term 9. Latest log index is 23.
+2385-05-14T23:38:08.398598500 1.844828s info: Table e21e7f74-eed0-4c04-b0b3-d8d2dcb107d0: Starting a new Raft election for term 14.
+2385-05-14T23:38:08.401099500 1.847415s info: Table e21e7f74-eed0-4c04-b0b3-d8d2dcb107d0: This server is Raft leader for term 14. Latest log index is 38.

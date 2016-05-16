@@ -1,9 +1,6 @@
 'use strict';
 
-
 module.exports = {
-
-    
     host: 'localhost',
     port: 28015,
     schema: 'Jammer',
@@ -11,6 +8,4 @@ module.exports = {
         jam: "Jam",
         user: "User"
     }
-
-
 };
