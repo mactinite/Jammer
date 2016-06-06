@@ -6,7 +6,7 @@ var exec = require('child_process').exec;
 gulp.task('sass', function () {
     return gulp.src('scss/**/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('public/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -21,21 +21,9 @@ gulp.task('browserSync', function () {
     })
 });
 
-// gulp.task('reloadServer', function (cb) {
-//     var server = (require('express'()).listen(3010));
-//     server.close();
-//     exec('node server.js', function (err, stdout, stderr) {
-//         console.log(stdout);
-//         console.log(stderr);
-//         cb(err);
-//     });
-// })
-
 gulp.task('watch', ['browserSync', 'sass'], function (cb) {
     gulp.watch('scss/**/*.scss', ['sass']);
     gulp.watch('*.html', browserSync.reload);
-    gulp.watch('views/*.html', browserSync.reload);
-    gulp.watch('js/**/*.js', browserSync.reload);
-    // gulp.watch('server.js', ['reloadServer']);
-    gulp.watch('css/**/*.css', browserSync.reload);
+    gulp.watch('public/**/*.*', browserSync.reload);
+    gulp.watch('app/**/*.*', browserSync.reload);
 });

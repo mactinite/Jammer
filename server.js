@@ -1,17 +1,37 @@
 'use strict';
 var express = require('express');
 var app = express();
-var r = require('rethinkdb');
 var passport = require('passport');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var GitHubStrategy = require('passport-github2').Strategy;
 var path = require('path');
 var uuid = require('uuid');
+var RDBStore = require('express-session-rethinkdb')(session);
+
+var rdbStore = new RDBStore({
+  connectOptions: {
+    servers: [
+      { host: '127.0.0.1', port: 28015 },
+    ],
+    db: 'Jammer',
+    discovery: false,
+    pool: false,
+    buffer: 50,
+    max: 1000,
+    timeout: 20,
+    timeoutError: 1000
+  },
+  table: 'session',
+  sessionTimeout: 86400000,
+  flushInterval: 60000,
+  debug: false
+});
 
 
-
-app.use(express.static(path.join(__dirname, 'views')));
+//Looks in public directy for resource first, then defaults to root
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 
 app.use(bodyParser.urlencoded({
   extended: true
@@ -25,8 +45,10 @@ app.use(bodyParser.json({
 app.use(session({
   genid: function () { uuid.v4(); },
   secret: 'Jammer is the jam',
-  resave: true,
-  saveUninitialized: true
+  cookie: {httpOnly: false},
+  resave: false,
+  saveUninitialized: true,
+  store: rdbStore
 }))
 
 passport.serializeUser(function (user, done) {
@@ -57,6 +79,9 @@ app.use('/api/', posts);
 
 var auth = require('./app/routes/auth')(passport, GitHubStrategy);
 app.use('/', auth);
+
+var tests = require('./app/routes/tests')();
+app.use('/test', tests);
 
 app.get('/jamPosts', function (req, res) {
   res.sendFile(path.join(__dirname, 'views/test.html'));

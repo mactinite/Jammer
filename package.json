@@ -29,6 +29,7 @@
     "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
+    "express-session-rethinkdb": "^0.4.1",
     "foundation-apps": "^1.2.0",
     "passport": "^0.3.2",
     "passport-github2": "^0.1.10",
@@ -39,6 +40,7 @@
     "passport-oauth": "^1.0.0",
     "passport-openid": "^0.4.0",
     "rethinkdb": "^2.2.2",
+    "rethinkdbdash": "^2.3.7",
     "thinky": "^2.2.6",
     "uuid": "^2.0.2"
   },

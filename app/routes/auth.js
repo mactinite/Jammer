@@ -1,4 +1,5 @@
 var router = require('express').Router();
+var session = require('express-session');
 var r = require('rethinkdb');
 var db = require('../../config/database');
 var p = r.connect({ db: db.schema });
@@ -40,35 +41,37 @@ module.exports = (function (passport, GitHubStrategy) {
         passport.authenticate('github', { scope: ['user:email'] }));
 
     router.get('/auth/github/callback',
-        passport.authenticate('github', {sucessRedirect: '/test', failureRedirect: '/login', failureFlash: true }),
+        passport.authenticate('github', { sucessRedirect: '/test', failureRedirect: '/login', failureFlash: true }),
         function (req, res) {
             // Successful authentication, redirect home.
             res.send(req.session);
         });
 
     router.post('/register', function (req, res) {
+        var salt = bcrypt.genSaltSync(10);
+        var hash = bcrypt.hashSync(req.body.password, salt);
+        var user = new User({
+            local: {
+                name: req.body.name,
+                email: req.body.email,
+                password: hash
+            }
+        });
+        req.session.user = user;
+        user.saveAll().then(function (result) {
+            p.then(function (conn) {
+                r.table(db.table.user).insert(result).run(conn, function (err, response) {
+                    if (err) throw err;
+                    res.send(result);
+                });
+            }).error(function (error) {
+                throw error;
+            });
+        });
+    });
+
+    router.get('/sessionTest', function (req, res) {
         res.send(req.session);
-        // var salt = bcrypt.genSaltSync(10);
-        // var hash = bcrypt.hashSync(req.body.password, salt);
-        // var user = new User({
-        //     local: {
-        //         name: req.body.name,
-        //         email: req.body.email,
-        //         password: hash
-        //     }
-        // });
-
-
-        // user.saveAll().then(function (result) {
-        //     p.then(function (conn) {
-        //         r.table(db.table.user).insert(result).run(conn, function (err, response) {
-        //             if (err) throw err;
-        //             res.send(result);
-        //         });
-        //     }).error(function (error) {
-        //         throw error;
-        //     });
-        // });
     });
 
     return router;

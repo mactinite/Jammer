@@ -1,0 +1,56 @@
+<!doctype html>
+
+<head>
+    <script src="/node_modules/angular/angular.js" type="application/javascript"></script>
+    <script type="application/javascript" src="/js/test.js"></script>
+    <script src="/node_modules/angular-cookies/angular-cookies.min.js" type="application/javascript"></script>
+</head>
+
+<html>
+
+<body ng-app="test" ng-controller='testCtrl'>
+    <h1>Hello, {{name}}</h1>
+    <h3>Login</h3>
+    <form method="post" action="/asdf">
+        <input type="text" name="user[name]">
+        <input type="text" name="user[email]">
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="login" method="get">
+        <input type="submit" value="Sign in with GitHub">
+    </form>
+
+    <form action="api/jamPosts" method="get">
+        <input type="submit" value="jamPosts">
+    </form>
+
+    <form action="dbTest" method="get">
+        <input type="submit" value="Test the db">
+    </form>
+
+    <form action="register" method="post">
+        <div>
+            <p>Name</p>
+            <input type="text" name="name">
+        </div>
+
+        <div>
+            <p>Email</p>
+            <input type="email" name="email">
+        </div>
+
+        <div>
+            <p>Password</p>
+            <input type="password" name="password">
+        </div>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <form action="sessionTest" method="get">
+        <input type="submit" value="View session">
+    </form>
+</body>
+
+</html>
