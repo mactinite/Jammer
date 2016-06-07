@@ -1,7 +1,7 @@
 var router = require('express').Router();
-var session = require('express-session');
 var r = require('rethinkdb');
 var db = require('../../config/database');
+var client = require('../../config/client').github;
 var p = r.connect({ db: db.schema });
 var bodyParser = require('body-parser');
 var User = require('../model/user');
@@ -9,11 +9,12 @@ var bcrypt = require('bcryptjs');
 var uuid = require('uuid');
 
 
+
 module.exports = (function (passport, GitHubStrategy) {
     passport.use(new GitHubStrategy({
-        clientID: "1808dd1ef99c8682c796",
-        clientSecret: "a01d81440641ced60eb90514b4973670210eafef",
-        callbackURL: "http://127.0.0.1:3010/auth/github/callback"
+        clientID: client.clientID,
+        clientSecret: client.clientSecret,
+        callbackURL: client.callbackURL
     }, function (accessToken, refreshToken, profile, cb) {
         var user = new User({
             github: {
@@ -57,7 +58,6 @@ module.exports = (function (passport, GitHubStrategy) {
                 password: hash
             }
         });
-        req.session.user = user;
         user.saveAll().then(function (result) {
             p.then(function (conn) {
                 r.table(db.table.user).insert(result).run(conn, function (err, response) {

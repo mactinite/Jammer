@@ -883,3 +883,32 @@
 2385-06-06T00:38:58.490294600 219.751125s notice: All client connections closed.
 2385-06-06T00:38:58.490294601 219.751129s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
 2385-06-06T00:38:58.496298100 219.757887s notice: Storage engine shut down.
+2385-06-06T20:29:29.092834501 0.009537s notice: Running rethinkdb 2.3.1-windows-beta (MSC 190023506)...
+2385-06-06T20:29:29.092834502 0.011504s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2385-06-06T20:29:29.092834503 0.012563s notice: Loading data from directory C:\\Users\\Justin\\Desktop\\jammer\\db\\rethinkdb_data
+2385-06-06T20:29:29.108459200 0.029004s info: Automatically using cache size of 13411 MB
+2385-06-06T20:29:29.124084800 0.030516s notice: Listening for intracluster connections on port 29015
+2385-06-06T20:29:29.155336100 0.077126s notice: Listening for client driver connections on port 28015
+2385-06-06T20:29:29.170962300 0.077360s notice: Listening for administrative HTTP connections on port 8080
+2385-06-06T20:29:29.170962301 0.077363s notice: Listening on cluster address: 127.0.0.1
+2385-06-06T20:29:29.170962302 0.077365s notice: Listening on driver address: 127.0.0.1
+2385-06-06T20:29:29.170962303 0.077377s notice: Listening on http address: 127.0.0.1
+2385-06-06T20:29:29.170962304 0.077378s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2385-06-06T20:29:29.170962305 0.077379s notice: Server ready, "WACDTL23SG292E_tml" d877193d-48f8-47b6-ba8d-cd7196096e63
+2385-06-06T20:29:29.467848400 0.381381s notice: A newer version of the RethinkDB server is available: 2.3.3. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2385-06-06T20:29:30.419910700 1.326404s info: Table e21e7f74-eed0-4c04-b0b3-d8d2dcb107d0: Starting a new Raft election for term 23.
+2385-06-06T20:29:30.419910701 1.333660s info: Table e21e7f74-eed0-4c04-b0b3-d8d2dcb107d0: This server is Raft leader for term 23. Latest log index is 65.
+2385-06-06T20:29:31.068400900 1.975004s info: Table 875fd0ec-4d22-406a-85cc-ca56c63eb780: Starting a new Raft election for term 12.
+2385-06-06T20:29:31.068400901 1.988951s info: Table 875fd0ec-4d22-406a-85cc-ca56c63eb780: This server is Raft leader for term 12. Latest log index is 33.
+2385-06-06T20:29:31.130903500 2.037481s info: Table bd7d3c7b-67a6-4594-adaa-4ad6efe635b2: Starting a new Raft election for term 18.
+2385-06-06T20:29:31.130903501 2.040334s info: Table bd7d3c7b-67a6-4594-adaa-4ad6efe635b2: This server is Raft leader for term 18. Latest log index is 50.
+2385-06-06T20:32:58.000856500 208.907484s error: Failed to parse one or more lines from the log file, the contents of the `logs` system table will be incomplete. The following parse error occurred: cannot parse log message (2) while parsing "<<<<<<< 026966b6d2684e1ed3801de4af35ab4e74aceb07?"
+2385-06-06T20:57:47.674015500 1698.580511s info: Table f5d1bb91-1f6b-4bdd-a675-52aaf2d43855: Starting a new Raft election for term 1.
+2385-06-06T20:57:47.674015501 1698.580730s info: Table f5d1bb91-1f6b-4bdd-a675-52aaf2d43855: Added replica on this server.
+2385-06-06T20:57:47.677018300 1698.583749s info: Table f5d1bb91-1f6b-4bdd-a675-52aaf2d43855: This server is Raft leader for term 1. Latest log index is 0.
+2385-06-06T20:58:05.908566800 1716.815279s notice: Someone asked for the nonwhitelisted file "/fonts/ionicons.ttf".  If this should be accessible, add it to the static web assets.
+2385-06-06T22:22:35.002944400 6785.909259s notice: Server got Control-C; shutting down...
+2385-06-06T22:22:35.002944401 6785.909383s notice: Shutting down client connections...
+2385-06-06T22:22:35.005944700 6785.912582s notice: All client connections closed.
+2385-06-06T22:22:35.005944701 6785.912586s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2385-06-06T22:22:35.018593900 6785.926217s notice: Storage engine shut down.

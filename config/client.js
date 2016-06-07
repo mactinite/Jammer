@@ -1,7 +1,10 @@
 module.exports = {
+    session:{
+        secret: 'Jammer is the jam'
+    },
     github: {
-        clientID: '1808dd1ef99c8682c796',
-        clientSecret: 'a01d81440641ced60eb90514b4973670210eafef',
-        callbackURL: "http://127.0.0.1:3010/auth/github/callback"
+        clientID: 'a8c087bb9501fb865d69',
+        clientSecret: '7518ada6f744540c97629d0d0ffa14ef70b1f833',
+        callbackURL: "http://127.0.0.1:3000/auth/github/callback"
     }
 };
