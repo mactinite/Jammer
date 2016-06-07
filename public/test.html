@@ -9,13 +9,22 @@
 <html>
 
 <body ng-app="test" ng-controller='testCtrl'>
-    <h1>Hello, {{name}}</h1>
-    <h3>Login</h3>
-    <form method="post" action="/asdf">
-        <input type="text" name="user[name]">
-        <input type="text" name="user[email]">
-        <input type="submit" value="Submit">
-    </form>
+    <div ng-if="name">
+        <h3>Hello you have name</h3>
+        <h5>it's {{name}}</h5>
+    </div>
+    <div ng-if="!name">
+        <h3>Hello you have no name</h3>
+    </div>
+    <div ng-if="data.passport.user.github.profileImgURI">
+        <img src="{{data.passport.user.github.profileImgURI}}"></img>
+        <p>You're beautiful</p>
+    </div>
+    <div ng-if="!data.passport.user.github.profileImgURI">
+        <img src="../images/cat.jpg"></img>
+        <p>You're beautiful... but you could use a profile pic!</p>
+    </div>
+    <h1>{{data}}</h1>
 
     <form action="login" method="get">
         <input type="submit" value="Sign in with GitHub">

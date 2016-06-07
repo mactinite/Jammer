@@ -6,8 +6,6 @@ var router = require('express').Router();
 module.exports = (function () {
 
     router.get('/asdf', function (req, res) {
-        console.log(req.body);
-        req.session.name = Date.now();
         res.send(req.session);
     });
 

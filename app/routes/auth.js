@@ -29,7 +29,6 @@ module.exports = (function (passport, GitHubStrategy) {
             p.then(function (conn) {
                 r.table(db.table.user).insert(result).run(conn, function (err, response) {
                     if (err) throw err;
-                    console.log(response);
                 });
             }).error(function (error) {
                 throw error;
