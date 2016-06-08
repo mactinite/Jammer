@@ -32,7 +32,6 @@
     "express-session": "^1.13.0",
     "express-session-rethinkdb": "^0.4.1",
     "foundation-apps": "^1.2.0",
-    "handlebars": "^4.0.5",
     "passport": "^0.3.2",
     "passport-github2": "^0.1.10",
     "passport-google-oauth": "^1.0.0",
