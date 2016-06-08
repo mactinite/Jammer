@@ -2,36 +2,19 @@
 
 <head>
     <script src="/node_modules/angular/angular.js" type="application/javascript"></script>
-    <script type="application/javascript" src="/js/test.js"></script>
-    <script src="/node_modules/angular-cookies/angular-cookies.min.js" type="application/javascript"></script>
+    <script type="application/javascript" src="../public/js/test.js"></script>
 </head>
 
 <html>
 
-<body ng-app="test" ng-controller='testCtrl'>
-    <div ng-if="name">
-        <h3>Hello you have name</h3>
-        <h5>it's {{name}}</h5>
-    </div>
-    <div ng-if="!name">
-        <h3>Hello you have no name</h3>
-    </div>
-    <div ng-if="data.passport.user.github.profileImgURI">
-        <img src="{{data.passport.user.github.profileImgURI}}"></img>
-        <p>You're beautiful</p>
-    </div>
-    <div ng-if="!data.passport.user.github.profileImgURI">
-        <img src="../images/cat.jpg"></img>
-        <p>You're beautiful... but you could use a profile pic!</p>
-    </div>
-    <h1>{{data}}</h1>
-
+<body>
+    hello, <% if(session.hasOwnProperty('passport')){ %> <%= session.passport.user.github.name %> <% } %>
     <form action="login" method="get">
         <input type="submit" value="Sign in with GitHub">
     </form>
 
 
-    <form action="test/logout" method="post">
+    <form action="../test/logout" method="post">
         <input type="submit" value="Logout">
     </form>
 

@@ -17,7 +17,10 @@ gulp.task('browserSync', function () {
     browserSync.init({
         notify: false,
         port: 3000,
-        proxy: "localhost:3010",
+        open: "external",
+        proxy: {
+            target: "localhost:3010"
+        }
     })
 });
 

@@ -30,6 +30,11 @@ var rdbStore = new RDBStore({
   debug: true
 });
 
+
+//Looks in public directy for resource first, then defaults to root
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
+
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({
@@ -76,8 +81,10 @@ app.listen(port, function () {
           Routes      
     ==================
 */
-app.get('/test', function (req, res) {
-  res.render('test');
+app.get('/', function (req, res) {
+  res.render('test', {
+    session: req.session
+  });
 });
 
 var posts = require('./app/routes/posts')();
