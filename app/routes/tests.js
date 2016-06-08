@@ -9,5 +9,10 @@ module.exports = (function () {
         res.send(req.session);
     });
 
+    router.post('/logout', function(req, res){
+        req.logout();
+        res.redirect('/test.html');
+    });
+
     return router;
 });

@@ -9,6 +9,7 @@ var path = require('path');
 var uuid = require('uuid');
 var RDBStore = require('express-session-rethinkdb')(session);
 var client = require('./config/client').session;
+var ejs = require('ejs');
 
 var rdbStore = new RDBStore({
   connectOptions: {
@@ -29,10 +30,7 @@ var rdbStore = new RDBStore({
   debug: true
 });
 
-
-//Looks in public directy for resource first, then defaults to root
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(__dirname));
+app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({
   extended: true
@@ -78,6 +76,9 @@ app.listen(port, function () {
           Routes      
     ==================
 */
+app.get('/test', function (req, res) {
+  res.render('test');
+});
 
 var posts = require('./app/routes/posts')();
 app.use('/api/', posts);
