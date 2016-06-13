@@ -1,6 +1,7 @@
 'use strict';
 var express = require('express');
 var app = express();
+var flash = require('express-flash');
 var passport = require('passport');
 var bodyParser = require('body-parser');
 var session = require('express-session');
@@ -45,6 +46,8 @@ app.use(bodyParser.json({
   extended: true
 }));
 
+app.use(flash());
+
 
 app.use(session({
   genid: function (req) {
@@ -57,7 +60,22 @@ app.use(session({
   },
   resave: false,
   saveUninitialized: false,
-}))
+}));
+
+
+function getName(req) {
+  if (req.session.hasOwnProperty('passport') && req.session.passport.hasOwnProperty('user')
+    && req.session.passport.user.hasOwnProperty('github') && req.session.passport.user.github.hasOwnProperty('name'))
+    return req.session.passport.user.github.name;
+  return null;
+}
+
+app.use(function (req, res, next) {
+  res.locals.session = req.session;
+  res.locals.session.isLoggedIn = req.session.isLoggedIn || false;
+  res.locals.name = getName(req);
+  next();
+});
 
 passport.serializeUser(function (user, done) {
   done(null, user);
@@ -82,9 +100,7 @@ app.listen(port, function () {
     ==================
 */
 app.get('/', function (req, res) {
-  res.render('test', {
-    session: req.session
-  });
+  res.render('test');
 });
 
 var posts = require('./app/routes/posts')();

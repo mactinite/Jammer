@@ -8,16 +8,19 @@
 <html>
 
 <body>
-    hello, <% if(session.hasOwnProperty('passport')){ %> <%= session.passport.user.github.name %> <% } %>
+    <% if(session.isLoggedIn){ %>  Hello logged in person  <% } %>
+    <% if(name) { %>Hello, <%= name %> <% } %>
+
+    <% if(!session.isLoggedIn){ %>
     <form action="login" method="get">
         <input type="submit" value="Sign in with GitHub">
     </form>
-
+    <% } else { %>
 
     <form action="../test/logout" method="post">
         <input type="submit" value="Logout">
     </form>
-
+    <% } %>
 
     <form action="api/jamPosts" method="get">
         <input type="submit" value="jamPosts">
@@ -46,13 +49,6 @@
         <input type="submit" value="Register">
     </form>
 
-    <form action="testlogin" method="get">
-        <input type="submit" value="Set session variable">
-    </form>
-
-    <form action="testo" method="get">
-        <input type="submit" value="view session">
-    </form>
 </body>
 
 </html>

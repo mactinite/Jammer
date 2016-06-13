@@ -44,7 +44,8 @@ module.exports = (function (passport, GitHubStrategy) {
         passport.authenticate('github', { sucessRedirect: '/test', failureRedirect: '/login', failureFlash: true }),
         function (req, res) {
             // Successful authentication, redirect home.
-            res.send(req.session);
+            req.session.isLoggedIn = true;
+            res.redirect('/');
         });
 
     router.post('/register', function (req, res) {
