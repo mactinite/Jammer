@@ -11,6 +11,8 @@ var uuid = require('uuid');
 var RDBStore = require('express-session-rethinkdb')(session);
 var client = require('./config/client').session;
 var ejs = require('ejs');
+var _ = require('lodash');
+var logger = require('./app/logger');
 
 var rdbStore = new RDBStore({
   connectOptions: {
@@ -48,7 +50,6 @@ app.use(bodyParser.json({
 
 app.use(flash());
 
-
 app.use(session({
   genid: function (req) {
     return uuid.v4();
@@ -62,18 +63,10 @@ app.use(session({
   saveUninitialized: false,
 }));
 
-
-function getName(req) {
-  if (req.session.hasOwnProperty('passport') && req.session.passport.hasOwnProperty('user')
-    && req.session.passport.user.hasOwnProperty('github') && req.session.passport.user.github.hasOwnProperty('name'))
-    return req.session.passport.user.github.name;
-  return null;
-}
-
 app.use(function (req, res, next) {
   res.locals.session = req.session;
   res.locals.session.isLoggedIn = req.session.isLoggedIn || false;
-  res.locals.name = getName(req);
+  res.locals.name = _.get(req.session, 'passport.user.github.name');
   next();
 });
 
@@ -93,6 +86,7 @@ var port = 3010;
 app.listen(port, function () {
   console.log('server listening on port ' + port);
 });
+
 
 /* 
     ==================
