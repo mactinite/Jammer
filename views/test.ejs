@@ -8,9 +8,10 @@
 <html>
 
 <body>
-    <% if(session.isLoggedIn){ %>  Hello logged in person  <% } %>
-    <% if(name) { %>Hello, <%= name %> <% } %>
+    <? if(session.isLoggedIn){ ?>  Hello logged in person  <? } ?>
+    <? if(name) { ?>Hello, <?= name ?> <? } ?>
 
+<<<<<<< HEAD
     <% if(!session.isLoggedIn){ %>
     <form action="/loginGithub" method="get">
         <input type="submit" value="Sign in with GitHub">
@@ -24,11 +25,18 @@
         <input type="submit" value="Sign in locally" />
     </form>
     <% } else { %>
+=======
+    <? if(!session.isLoggedIn){ ?>
+    <form action="login" method="get">
+        <input type="submit" value="Sign in with GitHub">
+    </form>
+    <? } else { ?>
+>>>>>>> 296ab60acde6a52f01f9e5db831974f260e2cac3
 
     <form action="../test/logout" method="post">
         <input type="submit" value="Logout">
     </form>
-    <% } %>
+    <? } ?>
 
     <form action="api/jamPosts" method="get">
         <input type="submit" value="jamPosts">
