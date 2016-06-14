@@ -10,7 +10,7 @@ var path = require('path');
 var uuid = require('uuid');
 var RDBStore = require('express-session-rethinkdb')(session);
 var client = require('./config/client').session;
-var ejs = require('ejs'); 
+var ejs = require('ejs');
 var _ = require('lodash');
 var logger = require('./app/logger');
 
@@ -91,9 +91,9 @@ app.listen(port, function () {
 });
 
 
-/* 
+/*
     ==================
-          Routes      
+          Routes
     ==================
 */
 
@@ -110,8 +110,9 @@ app.use('/', auth);
 var tests = require('./app/routes/tests')();
 app.use('/test', tests);
 
+var account = require('./app/routes/root')();
+app.use('/account', account);
+
 app.get('/jamPosts', function (req, res) {
   res.sendFile(path.join(__dirname, 'views/test.html'));
 });
-
-
