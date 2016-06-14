@@ -10,9 +10,11 @@ var path = require('path');
 var uuid = require('uuid');
 var RDBStore = require('express-session-rethinkdb')(session);
 var client = require('./config/client').session;
-var ejs = require('ejs');
+var ejs = require('ejs'); 
 var _ = require('lodash');
 var logger = require('./app/logger');
+
+ejs.delimiter = '?';
 
 var rdbStore = new RDBStore({
   connectOptions: {
@@ -63,6 +65,7 @@ app.use(session({
   saveUninitialized: false,
 }));
 
+// Set locals here for templates
 app.use(function (req, res, next) {
   res.locals.session = req.session;
   res.locals.session.isLoggedIn = req.session.isLoggedIn || false;

@@ -1,70 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
-    <title>Jammer</title>
-    
-    <script src="/node_modules/angular/angular.js" type="application/javascript"></script>
-    <script src="/js/controllers.js" type="application/javascript"></script>
-    <link rel="stylesheet" href="css/pure.css">
-    
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-    <!--<![endif]-->
-    
-    <link rel="stylesheet" href="css/jammer.css">
-    <link rel="stylesheet" href="css/font-awesome/font-awesome.css">
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.css" />
-    <script>
-        (function($){
-            $(window).load(function(){
-                $(".posting-area").mCustomScrollbar();
-            });
 
-        })(jQuery);
+<!--Header Content -->
+<?-include('common/head'); ?>
 
-    </script>
-</head>
-<body ng-app="jammer">
 <div id="layout">
-    <!-- Menu toggle -->
-    
-        <!-- Hamburger icon -->
-        <span></span>
-    </a>
-    <div id="menu-wrapper">
-        <div id="menu-icons">
-            <i class="fa fa-home" aria-hidden="true"></i>
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <i class="fa fa-users" aria-hidden="true"></i>
-            <i class="fa fa-cogs" aria-hidden="true"></i>
-            <a href="#menu" id="menuLink" class="menu-link"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-            
-        </div>
-        <div id="menu">
-
-            <div class="pure-menu">
-                <a class="pure-menu-heading"  href="#">Jammer</a>
-
-                <ul class="pure-menu-list">
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Search</a></li>                    
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Profile</a></li>
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Groups</a></li>
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Settings</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
+    <!--Navigation Content -->
+    <?-include('common/global_nav.ejs')?>
 
     <div id="main pure-g">
 
@@ -128,12 +68,6 @@
     </div>
 </div>
 
+<?-include('common/footer')?>
 
 
-
-
-<script src="js/ui.js"></script>
-
-
-</body>
-</html>
