@@ -93,8 +93,9 @@ app.listen(port, function () {
           Routes      
     ==================
 */
-app.get('/', function (req, res) {
-  res.render('test');
+
+app.get('/', function(req, res){
+  res.render('index');
 });
 
 var posts = require('./app/routes/posts')();

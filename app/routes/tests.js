@@ -9,7 +9,11 @@ module.exports = (function () {
         res.send(req.session);
     });
 
-    router.post('/logout', function(req, res){
+    router.get('/', function (req, res) {
+        res.render('test');
+    });
+
+    router.post('/logout', function (req, res) {
         req.logout();
         res.redirect('/');
     });
