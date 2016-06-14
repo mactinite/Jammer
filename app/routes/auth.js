@@ -37,7 +37,8 @@ module.exports = (function (passport, GitHubStrategy) {
         return cb(null, user);
     }));
 
-    router.get('/login',
+
+    router.get('/loginGithub',
         passport.authenticate('github', { scope: ['user:email'] }));
 
     router.get('/auth/github/callback',
@@ -47,6 +48,9 @@ module.exports = (function (passport, GitHubStrategy) {
             req.session.isLoggedIn = true;
             res.redirect('/');
         });
+
+    router.get('/loginLocal',
+        passport.authenticate('local', { successRedirect: '/test', failureRedirect: '/test' }));
 
     router.post('/register', function (req, res) {
         var salt = bcrypt.genSaltSync(10);

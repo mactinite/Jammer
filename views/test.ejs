@@ -12,8 +12,16 @@
     <? if(name) { ?>Hello, <?= name ?> <? } ?>
 
     <? if(!session.isLoggedIn){ ?>
-    <form action="login" method="get">
+    <form action="/loginGithub" method="get">
         <input type="submit" value="Sign in with GitHub">
+    </form>
+
+    <form action="loginLocal" method="get">
+        Name
+        <input type="text" name="name" />
+        Password
+        <input type="password" name="password" />
+        <input type="submit" value="Sign in locally" />
     </form>
     <? } else { ?>
 
@@ -29,6 +37,8 @@
     <form action="dbTest" method="get">
         <input type="submit" value="Test the db">
     </form>
+
+
 
     <form action="register" method="post">
         <div>
