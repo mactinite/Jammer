@@ -8,19 +8,19 @@
 <html>
 
 <body>
-    <% if(session.isLoggedIn){ %>  Hello logged in person  <% } %>
-    <% if(name) { %>Hello, <%= name %> <% } %>
+    <? if(session.isLoggedIn){ ?>  Hello logged in person  <? } ?>
+    <? if(name) { ?>Hello, <?= name ?> <? } ?>
 
-    <% if(!session.isLoggedIn){ %>
+    <? if(!session.isLoggedIn){ ?>
     <form action="login" method="get">
         <input type="submit" value="Sign in with GitHub">
     </form>
-    <% } else { %>
+    <? } else { ?>
 
     <form action="../test/logout" method="post">
         <input type="submit" value="Logout">
     </form>
-    <% } %>
+    <? } ?>
 
     <form action="api/jamPosts" method="get">
         <input type="submit" value="jamPosts">

@@ -5,7 +5,6 @@
 <div id="layout">
     <!--Navigation Content -->
     <?-include('common/global_nav.ejs')?>
-
     <div id="main pure-g">
 
 
@@ -14,12 +13,12 @@
                 <h1 class="header">Jammer.social</h1>
             </div>
 
-            
+
             <h2 class="content-subhead">Upcoming Jams</h2>
             <section class="pure-u-lg-5-5" ng-controller="postingArea"><p>Here are some popular upcoming jams</p>
-            <div class="JamPosts">       
-                <div class="posting-area">       
-                    <div class ="mCustomScrollbar"  data-mcs-axis="y" data-mcs-theme="dark-3"> 
+              <div class="JamPosts">
+                <div class="posting-area">
+                    <div class ="mCustomScrollbar"  data-mcs-axis="y" data-mcs-theme="dark-3">
                     <div class="jam-card" ng-repeat="i in getNumber(10) track by $index">
                         <div class="posting-card-image">
                             <span class="helper"></span>
@@ -38,7 +37,7 @@
             </section>
             <h2 class="content-subhead">Classifieds</h2>
             <section class="pure-u-lg-5-5" ng-controller="postingArea"><p>All new teammate requests!. Check it out!</p>
-            <div class="TeamPosts pure-u-lg-1-5" ng-repeat="type in jobTypes">       
+            <div class="TeamPosts pure-u-lg-1-5" ng-repeat="type in jobTypes">
                 <h3 class="content-subhead">Looking For {{type}}...</h3>
                 <div class="posting-area ">
                     <div class="posts-gradient">
@@ -58,8 +57,8 @@
                 <p class="text-center"><a href='#' class="pure-button" >See More</a></p>
             </div>
             </section>
-            
-     
+
+
             <h2 class="content-subhead">Try Resizing your Browser</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -69,5 +68,3 @@
 </div>
 
 <?-include('common/footer')?>
-
-
