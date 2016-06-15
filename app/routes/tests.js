@@ -10,7 +10,7 @@ module.exports = (function () {
     });
 
     router.get('/', function (req, res) {
-        res.render('test');
+        res.render('test',{layout:false});
     });
 
     router.post('/logout', function (req, res) {

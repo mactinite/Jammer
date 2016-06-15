@@ -1,17 +1,19 @@
 <!doctype html>
 
+<html>
 <head>
     <script src="/node_modules/angular/angular.js" type="application/javascript"></script>
     <script type="application/javascript" src="../public/js/test.js"></script>
 </head>
 
-<html>
 
 <body>
-    <? if(session.isLoggedIn){ ?>  Hello logged in person  <? } ?>
-    <? if(name) { ?>Hello, <?= name ?> <? } ?>
+    {{#if session.isLoggedIn}}  Hello logged in person  {{/if}}
+    {{# if name}}
+    Hello, {{name}}
+    {{/if}}
 
-    <? if(!session.isLoggedIn){ ?>
+    {{# unless session.isLoggedIn }}
     <form action="/loginGithub" method="get">
         <input type="submit" value="Sign in with GitHub">
     </form>
@@ -23,12 +25,12 @@
         <input type="password" name="password" />
         <input type="submit" value="Sign in locally" />
     </form>
-    <? } else { ?>
+    {{ else }}
 
     <form action="../test/logout" method="post">
         <input type="submit" value="Logout">
     </form>
-    <? } ?>
+    {{/unless }}
 
     <form action="api/jamPosts" method="get">
         <input type="submit" value="jamPosts">

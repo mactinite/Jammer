@@ -30,6 +30,7 @@
     "ejs": "^2.4.2",
     "express": "^4.13.4",
     "express-flash": "0.0.2",
+    "express-handlebars": "^3.0.0",
     "express-session": "^1.13.0",
     "express-session-rethinkdb": "^0.4.1",
     "foundation-apps": "^1.2.0",
