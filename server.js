@@ -10,11 +10,9 @@ var path = require('path');
 var uuid = require('uuid');
 var RDBStore = require('express-session-rethinkdb')(session);
 var client = require('./config/client').session;
-var ejs = require('ejs');
+var exphbs = require('express-handlebars');
 var _ = require('lodash');
 var logger = require('./app/logger');
-
-ejs.delimiter = '?';
 
 var rdbStore = new RDBStore({
   connectOptions: {
@@ -39,8 +37,8 @@ var rdbStore = new RDBStore({
 //Looks in public directy for resource first, then defaults to root
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname));
-
-app.set('view engine', 'ejs');
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
 
 app.use(bodyParser.urlencoded({
   extended: true

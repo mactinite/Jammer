@@ -1,25 +1,16 @@
-<!--Header Content -->
-<?-include('common/head'); ?>
-
-<div id="layout">
-    <!--Navigation Content -->
-    <?-include('common/global_nav.ejs')?>
-
     <div id="main pure-g">
 
 
         <div class="content">
             <div class="pure-u-lg-1">
                 <h1 class="header">Account Information</h1>
-                <? if(session.isLoggedIn){?>
+                {{#if session.isLoggedIn}}
                 <section> <p>information, confidential</p> </section>
-                <?} else { ?>
+                {{else}}
                 <section> <p>Oops! Not authenticated!</p> </section>
-                <?}?>
+                {{/if}}
             </div>
 
         </div>
     </div>
 </div>
-
-<?-include('common/footer')?>
