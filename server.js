@@ -65,6 +65,7 @@ app.use(session({
 
 // Set locals here for templates
 app.use(function (req, res, next) {
+  res.locals.path = req.get('host');
   res.locals.session = req.session;
   res.locals.session.isLoggedIn = req.session.isLoggedIn || false;
   res.locals.name = _.get(req.session, 'passport.user.github.name');
@@ -105,8 +106,9 @@ app.use('/api/', posts);
 var auth = require('./app/routes/auth')(passport, GitHubStrategy);
 app.use('/', auth);
 
+var account = require('./app/routes/root')();
+app.use('/account', account);
+
 var tests = require('./app/routes/tests')();
 app.use('/test', tests);
 
-var account = require('./app/routes/root')();
-app.use('/account', account);

@@ -1,66 +1,58 @@
-<!doctype html>
 
-<html>
-<head>
-    <script src="/node_modules/angular/angular.js" type="application/javascript"></script>
-    <script type="application/javascript" src="../public/js/test.js"></script>
-</head>
+<div id="main pure-g">
+    <div class="content">
+        {{#if session.isLoggedIn}}  Hello logged in person  {{/if}}
+        {{#if name}}
+        Hello, {{name}}
+        {{/if}}
 
+        {{#unless session.isLoggedIn }}
+        <form action="/loginGithub" method="get">
+            <input type="submit" value="Sign in with GitHub">
+        </form>
 
-<body>
-    {{#if session.isLoggedIn}}  Hello logged in person  {{/if}}
-    {{# if name}}
-    Hello, {{name}}
-    {{/if}}
+        <form action="loginLocal" method="get">
+            Name
+            <input type="text" name="name" />
+            Password
+            <input type="password" name="password" />
+            <input type="submit" value="Sign in locally" />
+        </form>
+        {{else}}
 
-    {{# unless session.isLoggedIn }}
-    <form action="/loginGithub" method="get">
-        <input type="submit" value="Sign in with GitHub">
-    </form>
+        <form action="../test/logout" method="post">
+            <input type="submit" value="Logout">
+        </form>
+        {{/unless}}
 
-    <form action="loginLocal" method="get">
-        Name
-        <input type="text" name="name" />
-        Password
-        <input type="password" name="password" />
-        <input type="submit" value="Sign in locally" />
-    </form>
-    {{ else }}
+        <form action="api/jamPosts" method="get">
+            <input type="submit" value="jamPosts">
+        </form>
 
-    <form action="../test/logout" method="post">
-        <input type="submit" value="Logout">
-    </form>
-    {{/unless }}
-
-    <form action="api/jamPosts" method="get">
-        <input type="submit" value="jamPosts">
-    </form>
-
-    <form action="dbTest" method="get">
-        <input type="submit" value="Test the db">
-    </form>
+        <form action="dbTest" method="get">
+            <input type="submit" value="Test the db">
+        </form>
 
 
 
-    <form action="register" method="post">
-        <div>
-            <p>Name</p>
-            <input type="text" name="name">
-        </div>
+        <form action="register" method="post">
+            <div>
+                <p>Name</p>
+                <input type="text" name="name">
+            </div>
 
-        <div>
-            <p>Email</p>
-            <input type="email" name="email">
-        </div>
+            <div>
+                <p>Email</p>
+                <input type="email" name="email">
+            </div>
 
-        <div>
-            <p>Password</p>
-            <input type="password" name="password">
-        </div>
+            <div>
+                <p>Password</p>
+                <input type="password" name="password">
+            </div>
 
-        <input type="submit" value="Register">
-    </form>
-
-</body>
-
-</html>
+            <input type="submit" value="Register">
+            Path is: {{path}}
+        </form>
+    </div>
+</div>
