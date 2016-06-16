@@ -112,7 +112,3 @@ app.use('/test', tests);
 
 var account = require('./app/routes/root')();
 app.use('/account', account);
-
-app.get('/jamPosts', function (req, res) {
-  res.sendFile(path.join(__dirname, 'views/test.html'));
-});

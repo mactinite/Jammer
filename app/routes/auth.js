@@ -53,8 +53,9 @@ module.exports = (function (passport, GitHubStrategy) {
         passport.authenticate('local', { successRedirect: '/test', failureRedirect: '/test' }));
 
     router.post('/register', function (req, res) {
-        var salt = bcrypt.genSaltSync(10);
-        var hash = bcrypt.hashSync(req.body.password, salt);
+        //TODO: Check username availability
+        //TODO: Email validation
+        var hash = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10));
         var user = new User({
             local: {
                 name: req.body.name,
